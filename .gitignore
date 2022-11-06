@@ -1,0 +1,6 @@
+# History files
+.Rhistory
+# Session Data files
+.RData
+# RStudio Connect folder
+rsconnect/
