@@ -15,12 +15,11 @@ library(shinycssloaders) # for animated loading icon
 library(rsconnect)
 library(markdown)
 library(jsonlite)
-library(shinyalert)
+library(shinyalert) # for notifications
 
 source("custom_bipartited3_functions.R") # removeSource(BP_JS_Writer_a) to remove function from environment
 
 ## FUNCTION DEFINITIONS ##
-
 
 # Abbreviate input strings to match input edgelist
 abbr_input <- function(input){
@@ -30,9 +29,9 @@ abbr_input <- function(input){
     abbr <- "fts"
   } else if(input == "Attributes") {
     abbr <- "ats"
-  } else if(input == "Events in Soviet History") {
+  } else if(input == "Events, Periods in Soviet History") {
     abbr <- "sh"
-  } else if(input == "Events in pre-Soviet History") {
+  } else if(input == "Events, Periods in pre-Soviet History") {
     abbr <- "psh"
   } else if(input == "All Groups and Locations") {
     abbr <- "ag"
@@ -46,7 +45,7 @@ abbr_input <- function(input){
   return(abbr)
 }
 
-# Read in edgelist
+# Read in bipartite edgelist
 read_edgelist <- function(input_1, input_2){ # input_1 = category, input_2 = group
   filepath <- paste0("./input/", abbr_input(input_1), "_", abbr_input(input_2), "_edgelist.csv")
   edgelist <- read.csv2(filepath, header=T, row.names=NULL)
@@ -67,8 +66,8 @@ read_nodelist <- function(input_2){
   return(nodelist)
 }
 
-# Add weights to edgelist by counting recurring edges and combine issues and other 
-# attributes into one vector. Note that summarise()` has grouped output by 'source'. Override using the `.groups` argument.
+# Add weights to bipartite edgelist by counting recurring edges and combine 
+# issues and other attributes into one vector. 
 make_weighted <- function(edgelist) {
   edgelist$startpos <- NULL
   edgelist$weight <- 1
@@ -78,7 +77,8 @@ make_weighted <- function(edgelist) {
   return(weighted_edgelist)
 } 
 
-# Important: reverse order of columns by changing "group_by" order
+# Add weights to unipartite edgelist by counting recurring edges and combine 
+# issues and other attributes into one vector depending on input category
 make_unipartite_weighted <- function(edgelist, input) { # input = category
   edgelist$startpos <- NULL
   edgelist$weight <- 1
@@ -104,6 +104,7 @@ make_unipartite_weighted <- function(edgelist, input) { # input = category
 
 
 ## UI ##
+
 ui <- fluidPage(
   # custom CSS for Notification button in Bigraph panel
   tags$head(
@@ -131,8 +132,8 @@ ui <- fluidPage(
               choices=c("Narratives", 
                         "Features", 
                         "Attributes", 
-                        "Events in Soviet History", 
-                        "Events in pre-Soviet History")),
+                        "Events, Periods in Soviet History", 
+                        "Events, Periods in pre-Soviet History")),
       # align checkboxGroupInput in columns
       fluidRow(
         column(
@@ -140,11 +141,12 @@ ui <- fluidPage(
           checkboxGroupInput(
             inputId = "category_2",
             label=NULL,
-            choices = c("modernization / socialist progress", 
-                        "slijanie / sblizhenie", 
+            choices = c("modernization", 
                         "Sovietization", 
+                        "sblizhenie", 
                         "control over nature",
-                        "closing gap between city and countryside")
+                        "closing gap between city and countryside", 
+                        "socialist internationalism")
           )
         ),
         
@@ -155,9 +157,9 @@ ui <- fluidPage(
             label = NULL,
             choices = c("battle against religion", 
                         "battle against perezhitki / survivals", 
-                        "liberation of women", 
-                        "failed modernization", 
-                        "socialist internationalism")
+                        "liberation of women",
+                        "development of national in form, socialist in content culture",
+                        "assimilation")
           )
         )
       ),
@@ -180,7 +182,8 @@ ui <- fluidPage(
                         "Kazakhs",
                         "Kyrgyz", 
                         "Central Asian titular nations", 
-                        "Historical")
+                        "Historical groups",
+                        "Historical locations")
           )
         ),
         
@@ -193,6 +196,7 @@ ui <- fluidPage(
                         "ravninnye tadzhiki", 
                         "Central Asia", 
                         "Soviet Union", 
+                        "russkij narod / Russians",
                         "Afghanistan", 
                         "Iran", 
                         "women")
@@ -249,32 +253,82 @@ server <- function(input, output, session) {
     if(input$category == "Features") {
       updateCheckboxGroupInput(session, "category_2",
                              selected=character(0),
-                             choices=c("byt", "housing", "clothing"),)
+                             choices=c("byt / bytovyj uklad", "housing", "clothing", "food / cooking", "kul'tura / kul'turnye tradicii",
+                                       "material'naja kul'tura", "dukhovnaja kul'tura",
+                                       "language / spoken","language / terminology", "prazdniki", "folklore",
+                                       "intermarriages", "weddings", "child birth", "family life","death / funerals",
+                                       "medicine / healthcare"),)
       updateCheckboxGroupInput(session, "category_3",
                              selected=character(0),
-                             choices=c("perezhitki", "physical features", "religion"),)
+                             choices=c("perezhitki", "religion", "beliefs / myths",
+                                       "physical features",'"racial type" / rasovyj tip / rasa', 
+                                       "ethnogenesis", "etnos / ethnos", "identity / self-description", "external identification",
+                                      "obraz zhizni", "kolkhozes", "agriculture", 
+                                      "gender relations / polozhenie zhensshiny",
+                                      "family structure", "social formation", "mode of production"),)
     } else if (input$category == "Attributes") {
       updateCheckboxGroupInput(session, "category_2",
                                selected=character(0),
-                               choices=c("modern", "peredovyj", "isolated"),)
+                               choices=c("modern / sovremennyj", "progressive / peredovyj", "progressive / progressivnyj","developed / razvito", 
+                                         "suppressed / ugnetennyj / exploited", "unequal", "egalitarian / liberated",
+                                         "undemocratic / hierarchical / despotic", "democratic", "collectivist",
+                                         "atheist / non-spiritual / materialist",
+                                         "educated", "obespechenno", "urban", "kult'turno",
+                                         "Muslim", "zoroastrijskij", "religious", "superstitious",
+                                         "feudal","patriarchal", "matriarchal",
+                                         "loyal / trustworthy", "disloyal / suspect", "peaceful", "belligerent"),)
       updateCheckboxGroupInput(session, "category_3",
                                selected=character(0),
-                               choices=c("otstalyj", "active", "changing"),)
-    } else {
+                               choices=c("otstalyj", "archaic / arkhaichno", "primitive / primitivno",
+                                         "inhospitable / adverse conditions", "hospitable", "isolated / otdalennyj / trudnodostupnyj", "zamknutyj",
+                                         "active", "passive", "evropeidno", "chisto",
+                                         "flawed / in need of improvement", 
+                                         "avtokhtonno", "unique / locally specific / svoeobraznyj", "diverse / mnogoobrazno",
+                                         "traditional / narodnyj / nacional'nyj", "mixed / coexisting",
+                                         "vanishing / being replaced or erased", "threatened / attacked / in need of protection",
+                                         "changing / in a process of change",
+                                         "growing", "ustoichivo / stable"),)
+    } else if (input$category == "Events, Periods in Soviet History") {
       updateCheckboxGroupInput(session, "category_2",
                                selected=character(0),
-                               choices = c("modernization/socialist progress", 
-                                           "slijanie/sblizhenie", 
+                               choices=c("forced resettlements late 1920s-1930s",
+                                         "forced resettlements 1940s-early 1950s",
+                                         "forced resettlements 1960s - 1970s",
+                                         "construction of Bol'shoj Ferganskij kanal 1938-1940",
+                                         "process urbanizacii / urbanizacija"),)
+      updateCheckboxGroupInput(session, "category_3",
+                               selected=character(0),
+                               choices=c("nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x", 
+                                         "perekhod k osedlosti Sredneaziatskikh kochevnikov nachalo XXv.", 
+                                         "process nacional'noj konsolidacii tadzhikskogo naroda",
+                                         "gody kollektivizacii"),)
+    } else if (input$category == "Events, Periods in pre-Soviet History") { 
+      updateCheckboxGroupInput(session, "category_2",
+                               selected=character(0),
+                               choices=c("prisoedinenie Central'noj / Srednej Azii k Rossii", 
+                                         "prisoedinenie Vostochnoj Bukhary k Rossii", 
+                                         "prisoedinenie Kokandskogo khanstva k Rossii"),)
+      updateCheckboxGroupInput(session, "category_3",
+                               selected=character(0),
+                               choices=c("pre-Soviet migration from highlands to lowlands", 
+                                         "process osedanija kochevnikov v konce XIX - nachale XX vv.", 
+                                         "Arabskoe zavoevanie Srednej Azii i vnedrenie islama"),)
+    } else { #input$category == "Narratives"
+      updateCheckboxGroupInput(session, "category_2",
+                               selected=character(0),
+                               choices = c("modernization", 
                                            "Sovietization", 
+                                           "sblizhenie",
                                            "control over nature",
-                                           "closing gap between city and countryside"),)
+                                           "closing gap between city and countryside", 
+                                           "socialist internationalism"),)
       updateCheckboxGroupInput(session, "category_3",
                                selected=character(0),
                                choices = c("battle against religion", 
-                                           "battle against 'perezhitki'", 
-                                           "liberation of women", 
-                                           "failed modernization", 
-                                           "socialist internationalism"),)
+                                           "battle against perezhitki / survivals", 
+                                           "liberation of women",
+                                           "development of national in form, socialist in content culture",
+                                           "assimilation"),)
     }
 
   })
@@ -405,7 +459,10 @@ server <- function(input, output, session) {
   
     
     output$network <- renderForceNetwork ({
+      
       d <- filtered_edgelist()
+      
+      # create bipartite / unipartite igraph object and convert to networkD3 object
       if(input$unipartite == FALSE){
         # clean edgelist for input into igraph functions: keep only source, target and weight columns
         d <- subset(d, select = c(source, target, weight))
@@ -422,7 +479,6 @@ server <- function(input, output, session) {
         y_d3 <- igraph_to_networkD3(net, group=x_d3$nodes$class)
         colourscale <- "d3.scaleOrdinal().range([d3.schemeCategory10[0],d3.schemeCategory10[4]])"#JS("d3.scaleOrdinal(d3.schemeCategory10);")
         charge <- -2^6 #-2^5
-          
       } else {
         # clean edgelist for input into igraph functions
         d <- subset(d, select = c(source, target, weight))
@@ -433,6 +489,7 @@ server <- function(input, output, session) {
         colourscale <- "d3.scaleOrdinal().range([d3.schemeCategory10[0]])" # '#1f77b4'one color only
         charge <- -2^5 #-2^8
       }
+      
       # draw force directed network
       forceNetwork(
         Links = y_d3$links,
@@ -452,6 +509,7 @@ server <- function(input, output, session) {
       )
     })
   
+    
   output$table <- DT::renderDataTable({
     d <- filtered_edgelist()
     datatable(d)
@@ -459,11 +517,13 @@ server <- function(input, output, session) {
   
 
   output$heatmap <- renderPlotly({
+    
     d <- filtered_edgelist()
     
-    # make graph: weight will be addded automatically as edge attribute E(net)$weight
+    # make graph object: weight will be added automatically as edge attribute E(net)$weight
     net <- graph_from_data_frame(d, directed = FALSE, vertices = NULL)
     
+    # transform input dataframe to incidence/adjacency matrix
     if(input$unipartite == FALSE){
       # make bipartite: add "type" attribute
       x_d3 <- igraph_to_networkD3(net)
@@ -478,7 +538,6 @@ server <- function(input, output, session) {
         names = TRUE,
         sparse = FALSE 
       )
-
     } else {
       # get adjacency matrix 
       m <- as_adjacency_matrix(
@@ -502,12 +561,12 @@ server <- function(input, output, session) {
                        plot_method = "plotly", colorbar_len = 0.7),
              nticks = max(m)+1) %>%
       layout(autosize = TRUE, margin = list(l = 0, r = 0, b = 0, t = 20, pad = 4)) # move output down
-      
   })
   
 
   output$bipartite <- renderD3({
-    # This output is only displayed if either specific groups, categories or years are selected.
+    
+    # Display output only if either specific groups, categories or years are selected.
     # Halt execution and display error message if too many groups or categories are selected
     exists <- is.null(input$group_2) && is.null(input$group_3) && is.null(input$category_2) && is.null(input$category_3) && (is.null(input$years) || input$years == "")
     if(exists && input$tabsetPanel == "Bigraph") {
@@ -519,8 +578,6 @@ server <- function(input, output, session) {
     
     # get filtered edgelist
     d <- filtered_edgelist()
-    # write js script using customized bipartiteD3::BP_JS_Writer() function
-    # maybe this does not have to be rewritten each time??
     d <- subset(d, select = c(source, target, weight))
     # convert dataframe to incidence matrix using bipartite igraph object
     net <- graph_from_data_frame(d, directed = FALSE, vertices = NULL)
@@ -564,6 +621,7 @@ server <- function(input, output, session) {
 
     # set colors: will be grey scale in this case
     mycolors <- YlGnBu(50) # number of colors
+   
     # write .js script containing instructions for input into r2d3 function
     # using customized BP_JS_Writer() function from bipartiteD3 package
     BP_JS_Writer_a(df,
@@ -578,7 +636,7 @@ server <- function(input, output, session) {
                    mp = c(1,1),
                    MinWidth=1,
                    Pad=4,
-                   IndivFigSize= c(300, 1000),
+                   IndivFigSize= c(300, 1000), 
                    BarSize = 35,
                    Orientation = 'vertical',
                    EdgeMode = 'smooth',
@@ -590,15 +648,14 @@ server <- function(input, output, session) {
                    PercPos = NULL,
                    CSS_Output_Supress = FALSE,
                    PRINT=FALSE
-
       )
     
     # convert dataframe to d3 friendly data format (JSON object of arrays)
     colnames(df) <- NULL
     jdata <- jsonlite::toJSON(df)
-    # from bipartite_D3 function: creates the visualization based on input data, which 
+    # from bipartite_D3 function: create the visualization based on input data, which 
     # is changed reactively, and .js script containing visualization instructions
-    #LoadVisJS()
+    #LoadVisJS() #uncomment this in case of error "viz not found"
     r2d3::r2d3(data =jdata, script = "JSBP.js", 
                d3_version = '5',
                dependencies ="vizjs.js") 
