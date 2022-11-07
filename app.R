@@ -66,6 +66,55 @@ read_nodelist <- function(input_2){
   return(nodelist)
 }
 
+# agrepl for some matches like Afghanistan, but grepl for others, like "tadzhiki" ? 
+# Currently still unable to select more than one group if groups are matched with agrepl instead of grepl
+# previous version: edgelist<- subset(edgelist, group %in% input_groups | source %in% input_groups)
+filter_groups_bipartite <- function(edgelist, input_groups) {
+  if(length(input_groups) > 0) { # input_groups not empty: either group_2 or group_3 was selected and !is.null(input$group_2) || !is.null(input$group_3)
+    edgelist_a <- subset(edgelist,  agrepl(paste(input_groups,collapse="|"), edgelist$group, max.distance=1))
+    edgelist_b <- subset(edgelist,  agrepl(paste(input_groups,collapse="|"), edgelist$source, max.distance=1))
+    edgelist <- rbind(edgelist_a, edgelist_b)
+    return(edgelist)
+  } else {
+    return(edgelist)
+  }
+}
+
+# return all rows where both groups in the group column match the input_groups vector
+# change this to: either source or group 1 in group column and either target or group 2 in group column !
+filter_groups_unipartite <- function(edgelist, input_groups) {
+  if(length(input_groups) > 0) {
+    edgelist$matches <- edgelist$group %>%
+      str_split(", ") %>%
+      map(is.element, input_groups) %>%
+      map(sum) %>%
+      unlist
+    edgelist <- edgelist[edgelist$matches == 2,] 
+    return(edgelist)
+  } else {
+    return(edgelist)
+  }
+}
+
+filter_categories_bipartite <- function(edgelist, input_categories) {
+  if(length(input_groups) > 0) {
+    edgelist <- subset(edgelist, grepl(paste(input_categories,collapse="|"), edgelist$target))
+    return(edgelist)
+  } else {
+    return(edgelist)
+  }
+}
+
+filter_categories_unipartite <- function(edgelist, input_categories) {
+  if(length(input_groups) > 0) {
+    edgelist <- subset(edgelist, grepl(paste(input_categories,collapse="|"), edgelist[,9])) # edgelist[,9] always contains attribute, feature, narrative, event_or_period - depending on input category
+    return(edgelist)
+    } else {
+      return(edgelist)
+  }
+}
+
+
 # Add weights to bipartite edgelist by counting recurring edges and combine 
 # issues and other attributes into one vector. 
 make_weighted <- function(edgelist) {
@@ -237,6 +286,7 @@ ui <- fluidPage(
 server <- function(input, output, session) {  
   # print generalized error message in case of system errors
   options(shiny.sanitize.errors = TRUE)
+  
   # reactively remove bipartite graph tabsetPanel if unipartite option is selected
   observeEvent(input$mode, {
     if(input$mode != "Bipartite"){
@@ -246,6 +296,7 @@ server <- function(input, output, session) {
     }
     
   })
+  
   
   # reactively change input: if group is selected, remove choices from group_2 and group_3   
   observeEvent(input$group, {
@@ -257,6 +308,9 @@ server <- function(input, output, session) {
   
   # reactively change input: if new category is selected,change choices for category_2 and category_3   
   observeEvent(input$category, {
+    # reset "Only display similarity" input choice whenever a user switches between main categories
+    updateCheckboxInput(session, "similarity",
+                        value=FALSE)
     if(input$category == "Features") {
       updateCheckboxGroupInput(session, "category_2",
                              selected=character(0),
@@ -345,117 +399,30 @@ server <- function(input, output, session) {
   # years. Unlike filter_by_group, the category name does not exactly match the 
   # input category name, so string matching is employed instead of exact match.
   filtered_edgelist <- reactive({
+    # input choices into vectors 
     input_years <- str_replace_all(input$years,",", "|")
-    if (!is.null(input$group_2) || !is.null(input$group_3)) { # if either group_2 or group_3 are selected
-      input_groups <- c(input$group_2, input$group_3)
-      if(!is.null(input$category_2) || !is.null(input$category_3)){ # if either category_2 or category_3 are selected
-        input_categories <- c(input$category_2, input$category_3)
-        if(input$mode == "Bipartite") {
-          edgelist <- read_edgelist("All Groups and Locations", input$category)
-          # filter by category 
-          edgelist <- subset(edgelist, grepl(paste(input_categories,collapse="|"), edgelist$target))
-          # filter by group
-          edgelist<- subset(edgelist, group %in% input_groups | source %in% input_groups)
-          # filter by years 
-          edgelist <- subset(edgelist, grepl(input_years, edgelist$issue))
-        } else {
-          edgelist <- read_unipartite_edgelist("All Groups and Locations", input$category)
-          # filter by category
-          edgelist <- subset(edgelist, grepl(paste(input_categories,collapse="|"), edgelist[,9]))
-          # filter by group
-          # return all rows where both groups in the group column match the input_groups vector
-          edgelist$matches <- edgelist$group %>%
-            str_split(", ") %>%
-            map(is.element, input_groups) %>%
-            map(sum) %>%
-            unlist
-          edgelist <- edgelist[edgelist$matches == 2,] 
-          # filter by years 
-          edgelist <- subset(edgelist, grepl(input_years, edgelist$issue))
-        }
-      } else { # no category selected
-        if(input$mode == "Bipartite") {
-          edgelist <- read_edgelist("All Groups and Locations", input$category)
-          edgelist<- subset(edgelist, group %in% input_groups | source %in% input_groups)
-          # filter by years 
-          edgelist <- subset(edgelist, grepl(input_years, edgelist$issue))
-        } else {
-          edgelist <- read_unipartite_edgelist("All Groups and Locations", input$category)
-          # return all rows where both groups in the group column match the input_groups vector
-          edgelist$matches <- edgelist$group %>%
-            str_split(", ") %>%
-            map(is.element, input_groups) %>%
-            map(sum) %>%
-            unlist
-          edgelist <- edgelist[edgelist$matches == 2,] 
-          # filter by years 
-          edgelist <- subset(edgelist, grepl(input_years, edgelist$issue))
-        }
-      }
-    } else if(!is.null(input$category_2) || !is.null(input$category_3)){
-      input_categories <- c(input$category_2, input$category_3)
-      if (!is.null(input$group_2) || !is.null(input$group_3)) {
-        input_groups <- c(input$group_2, input$group_3)
-        if(input$mode == "Bipartite") {
-          edgelist <- read_edgelist("All Groups and Locations", input$category) #edgelist <- read_edgelist(input$group, input$category)
-          # filter by group
-          edgelist<- subset(edgelist, group %in% input_groups | source %in% input_groups)
-          # filter by category
-          edgelist <- subset(edgelist, grepl(paste(input_categories,collapse="|"), edgelist$target))#grepl(source, input_categories, fixed=T)
-          # filter by years 
-          edgelist <- subset(edgelist, grepl(input_years, edgelist$issue))
-          # add edge weights
-          # edgelist <- make_weighted(edgelist)
-        } else {
-          edgelist <- read_unipartite_edgelist("All Groups and Locations", input$category) #edgelist <- read_unipartite_edgelist(input$group, input$category)
-          # filter by group
-          edgelist$matches <- edgelist$group %>%
-                  str_split(", ") %>%
-                  map(is.element, input_groups) %>%
-                  map(sum) %>%
-                  unlist
-          edgelist <- edgelist[edgelist$matches == 2,]
-          # filter by category
-          edgelist <- subset(edgelist, grepl(paste(input_categories,collapse="|"), edgelist[,9])) # edgelist[,9] always contains attribute, feature, narrative, event_or_period - depending on input category
-          # filter by years 
-          edgelist <- subset(edgelist, grepl(input_years, edgelist$issue))
-        } 
-      } else {
-        if(input$mode == "Bipartite") {
-          edgelist <- read_edgelist(input$group, input$category) #edgelist <- read_edgelist(input$group, input$category)
-          edgelist <- subset(edgelist, grepl(paste(input_categories,collapse="|"), edgelist$target))#grepl(source, input_categories, fixed=T)
-          # filter by years 
-          edgelist <- subset(edgelist, grepl(input_years, edgelist$issue))
-        } else {
-          edgelist <- read_unipartite_edgelist(input$group, input$category) #edgelist <- read_unipartite_edgelist(input$group, input$category)
-          edgelist <- subset(edgelist, grepl(paste(input_categories,collapse="|"), edgelist[,9])) # edgelist[,9] always contains attribute, feature, narrative, event_or_period - depending on input category
-          # filter by years 
-          edgelist <- subset(edgelist, grepl(input_years, edgelist$issue))
-          
-          # improve this, generalize for when features are selected
-          if(input$similarity) {
-            # filter by similarity
-            edgelist <- subset(edgelist, grepl("similarity", edgelist[,10]))
-          } else {
-            edgelist <- edgelist
-          }
-        }
-      }
-    } else { # no categories or groups selected: read in unfiltered edgelist
-      if(input$mode == "Bipartite") {
-        edgelist <- read_edgelist(input$group, input$category)
-        # filter by years 
-        edgelist <- subset(edgelist, grepl(input_years, edgelist$issue))
-      } else {
-        edgelist <- read_unipartite_edgelist(input$group, input$category)
-        # filter by years 
-        edgelist <- subset(edgelist, grepl(input_years, edgelist$issue))
+    input_groups <- c(input$group_2, input$group_3) # if neither group_2 nor group_3 are selected, input_groups is an empty vector
+    input_categories <- c(input$category_2, input$category_3) # if neither category_2 nor category_3 are selected, input_groups is an empty vector
+    # read and filter edgelist depending on input mode
+    if(input$mode == "Bipartite") {
+      edgelist <- read_edgelist(input$group, input$category)
+      edgelist <- filter_groups_bipartite(edgelist, input_groups)
+      edgelist <- filter_categories_bipartite(edgelist, input_categories)
+    } else {
+      edgelist <- read_unipartite_edgelist(input$group, input$category)
+      edgelist <- filter_groups_unipartite(edgelist, input_groups)
+      edgelist <- filter_categories_unipartite(edgelist, input_categories)
+      if(input$similarity) { #  && input$category == "Features"
+        # filter by similarity
+        edgelist <- subset(edgelist, grepl("similarity", edgelist[,10]))
       }
     }
+    # filter by years: same for bipartite and unipartite modes 
+    edgelist <- subset(edgelist, grepl(input_years, edgelist$issue))
     
   })
   
-  # add edge weights
+  # Create reactive data. Add edge weights to dataframe filtered_edgelist
   weighted_edgelist <- reactive({
     edgelist <- filtered_edgelist()
     # isempty <- !sum(dim(edgelist)) > 0
