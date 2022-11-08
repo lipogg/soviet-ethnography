@@ -69,10 +69,12 @@ read_nodelist <- function(input_2){
 # agrepl for some matches like Afghanistan, but grepl for others, like "tadzhiki" ? 
 # Currently still unable to select more than one group if groups are matched with agrepl instead of grepl
 # previous version: edgelist<- subset(edgelist, group %in% input_groups | source %in% input_groups)
+# agrepl(paste(input_groups,collapse="|"), edgelist$group, max.distance=1)
+# Return input group and all its subgroups (input group is value in group column, not source column, in this case)
 filter_groups_bipartite <- function(edgelist, input_groups) {
   if(length(input_groups) > 0) { # input_groups not empty: either group_2 or group_3 was selected and !is.null(input$group_2) || !is.null(input$group_3)
-    edgelist_a <- subset(edgelist,  agrepl(paste(input_groups,collapse="|"), edgelist$group, max.distance=1))
-    edgelist_b <- subset(edgelist,  agrepl(paste(input_groups,collapse="|"), edgelist$source, max.distance=1))
+    edgelist_a <- subset(edgelist, grepl(paste(input_groups,collapse="|"), edgelist$group)) 
+    edgelist_b <- subset(edgelist, grepl(paste(input_groups,collapse="|"), edgelist$source)) 
     edgelist <- rbind(edgelist_a, edgelist_b)
     return(edgelist)
   } else {
@@ -82,19 +84,38 @@ filter_groups_bipartite <- function(edgelist, input_groups) {
 
 # return all rows where both groups in the group column match the input_groups vector
 # change this to: either source or group 1 in group column and either target or group 2 in group column !
+# If one group is selected, display all edges between subgroups of the selected category
+# If more than one group is selected, display only edges between subgroups of different main groups. 
+# F.e.: group 1 = tadzhiki, group 2 = uzbeki. Edges between tadzhiki Seravshana and uzbeki Samarkanda 
+# are displayed, but not edges between tadzhiki Seravshana and tadzhiki Darvaza.
 filter_groups_unipartite <- function(edgelist, input_groups) {
-  if(length(input_groups) > 0) {
-    edgelist$matches <- edgelist$group %>%
-      str_split(", ") %>%
-      map(is.element, input_groups) %>%
-      map(sum) %>%
-      unlist
-    edgelist <- edgelist[edgelist$matches == 2,] 
+  temp <- str_split_fixed(edgelist$group, ",", 2)
+  group_matches_1 <- grep(paste(input_groups,collapse="|"), temp[,1]) # return row indices
+  group_matches_2 <- grep(paste(input_groups,collapse="|"), temp[,2]) # return row indices
+  source_matches <- grep(paste(input_groups,collapse="|"), edgelist$source)# return row indices
+  target_matches <- grep(paste(input_groups,collapse="|"), edgelist$target)# return row indices
+  if(length(input_groups) > 0) { #  > 1 more than one category selected
+    if(!is.null(group_matches_1) && !is.null(group_matches_2)) { 
+      matches <- intersect(group_matches_1, group_matches_2)
+    } else if(!is.null(group_matches_1) && !is.null(target_matches)) {
+      matches <- intersect(group_matches_1, target_matches)
+    } else if(!is.null(group_matches_2) && !is.null(source_matches)) {
+      matches <- intersect(group_matches_2, source_matches)
+    } else if(!is.null(source_matches) && !is.null(target_matches)) {
+      matches <- intersect(source_matches, target_matches)
+    } else {
+      return(edgelist)
+    }
+  # } else if(length(input_groups) == 1) { #only one category selected
+  #   
+  # }
+    edgelist <- edgelist[matches, ]
     return(edgelist)
   } else {
     return(edgelist)
   }
 }
+
 
 filter_categories_bipartite <- function(edgelist, input_categories) {
   if(length(input_groups) > 0) {
@@ -155,9 +176,14 @@ make_unipartite_weighted <- function(edgelist, input) { # input = category
 ## UI ##
 
 ui <- fluidPage(
-  # custom CSS for Notification button in Bigraph panel
+  
   tags$head(
     tags$style(
+      # suppress error messages in output window
+      # type="text/css",
+      # ".shiny-output-error { visibility:hidden; }",
+      # ".shiny-output-error:before { visibility: hidden; }"
+      # custom CSS for Notification button in Bigraph panel
       HTML(".shiny-notification {
              position:fixed;
              top: calc(20%);
@@ -273,7 +299,7 @@ ui <- fluidPage(
       tabPanel("Network", forceNetworkOutput("network", width = "70em",height = "60em")),
       tabPanel("Edges", dataTableOutput(outputId = "table")),
       tabPanel("Bigraph", d3Output("bipartite", width = "110em",height = "150em")), 
-      tabPanel("Heatmap", shinycssloaders::withSpinner(plotlyOutput("heatmap", width = "120em",height = "150em", inline=F), hide.ui=FALSE)), # width = "80em",height = "80em", oder width = "80em",height = "50em"
+      tabPanel("Heatmap", shinycssloaders::withSpinner(plotlyOutput("heatmap", width = "120em",height = "130em", inline=F), hide.ui=FALSE)), # height = 150em
       tabPanel("About", includeMarkdown("about.md"))
    )
   )
@@ -413,7 +439,7 @@ server <- function(input, output, session) {
       edgelist <- filter_groups_unipartite(edgelist, input_groups)
       edgelist <- filter_categories_unipartite(edgelist, input_categories)
       if(input$similarity) { #  && input$category == "Features"
-        # filter by similarity
+        # filter for similarity relation
         edgelist <- subset(edgelist, grepl("similarity", edgelist[,10]))
       }
     }
@@ -654,5 +680,4 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui = ui, server = server)
-
 
