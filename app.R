@@ -82,6 +82,27 @@ filter_groups_bipartite <- function(edgelist, input_groups) {
   }
 }
 
+
+# Helper function for filter_groups_unipartite(). Takes the length of the current 
+# input_groups vector as input (i.e. length(c(input$groups_2, input$groups_3)))
+# and returns a vector of indices. This vector may be used to drop rows from a 
+# dataframe created by expand.grid() function. expand.grid() calculates the Cartesian 
+# product of the elements of two lists and returns a dataframe in which rows represent
+# all combinations of elements from the two lists, which includes elements with the 
+# same index position, i.e vector_1[[1]] and vector_2[[1]]. In the filter_groups_unipartite()
+# function, vector_1 and vector_2 are vectors of indices of rows in the input edgelist 
+# which matched matched the search group input. vector_1[[1]] and vector_2[[1]] thus contain
+# indices of rows from the input edgelist that matched with the same element in the 
+# input_groups vector. However, when more than one group is selected, the edgelist 
+# is be filtered for rows where different elements in the input_groups vector were matched.
+helper <- function(n) {
+  vec <- c()
+  for(i in 1:n){
+    vec <- c(vec, n*(n-(n-(i-1)))+i)
+  }
+  return(vec)
+}
+
 # return all rows where both groups in the group column match the input_groups vector
 # change this to: either source or group 1 in group column and either target or group 2 in group column !
 # If one group is selected, display all edges between subgroups of the selected category
@@ -89,12 +110,14 @@ filter_groups_bipartite <- function(edgelist, input_groups) {
 # F.e.: group 1 = tadzhiki, group 2 = uzbeki. Edges between tadzhiki Seravshana and uzbeki Samarkanda 
 # are displayed, but not edges between tadzhiki Seravshana and tadzhiki Darvaza.
 filter_groups_unipartite <- function(edgelist, input_groups) {
+  # temporarily split up "group" column into two: "group" column contains two groups, 
+  # the first corresponds to the source column, the second to the target column. 
   temp <- str_split_fixed(edgelist$group, ",", 2)
-  group_matches_1 <- grep(paste(input_groups,collapse="|"), temp[,1]) # return row indices
-  group_matches_2 <- grep(paste(input_groups,collapse="|"), temp[,2]) # return row indices
-  source_matches <- grep(paste(input_groups,collapse="|"), edgelist$source)# return row indices
-  target_matches <- grep(paste(input_groups,collapse="|"), edgelist$target)# return row indices
-  if(length(input_groups) > 0) { #  > 1 more than one category selected
+  if(length(input_groups) == 1) { # only one category selected
+    group_matches_1 <- grep(input_groups, temp[,1]) # return row indices
+    group_matches_2 <- grep(input_groups, temp[,2]) # return row indices
+    source_matches <- grep(input_groups, edgelist$source)# return row indices
+    target_matches <- grep(input_groups, edgelist$target)# return row indices
     if(!is.null(group_matches_1) && !is.null(group_matches_2)) { 
       matches <- intersect(group_matches_1, group_matches_2)
     } else if(!is.null(group_matches_1) && !is.null(target_matches)) {
@@ -106,11 +129,43 @@ filter_groups_unipartite <- function(edgelist, input_groups) {
     } else {
       return(edgelist)
     }
-  # } else if(length(input_groups) == 1) { #only one category selected
-  #   
-  # }
     edgelist <- edgelist[matches, ]
     return(edgelist)
+  } else if(length(input_groups) > 1) { # more than one category selected
+    # get list of list of all row indices that matched each of the input groups. 
+    # i.e. for input_groups <- c("tadzhiki", "uzbeki"), group_matches_3 is a list 
+    # of two lists: The first list contains indices of rows from the input edgelist, 
+    # where "tadzhiki" returned a match for the first element in the "group" column. 
+    group_matches_1 <- map(input_groups, grep, temp[,1])  # return row indices
+    group_matches_2 <- map(input_groups, grep, temp[,2])
+    source_matches <- map(input_groups, grep, edgelist$source)  # return row indices
+    target_matches <- map(input_groups, grep, edgelist$target)
+    # call helper function to remove all combinations between matches for the 
+    # same input group (see helper function specification)
+    indices <- helper(length(input_groups))
+    # get df of row indices of all combinations between group_matches_1 and group_matches_2
+    group_group_combinations <- expand.grid(group_matches_1, group_matches_2) 
+    group_group_combinations <- group_group_combinations[-indices, ]
+    # get df of row indices of all combinations between group_matches_1 and target_matches 
+    group_target_combinations <- expand.grid(group_matches_1, target_matches) 
+    group_target_combinations <- group_target_combinations[-indices, ]
+    # get df of row indices of all combinations between group_matches_2 and source_matches 
+    source_group_combinations <- expand.grid(group_matches_1, target_matches) 
+    source_group_combinations <- source_group_combinations[-indices, ]
+    # get df of row indices of all combinations between source_matches and target_matches
+    source_target_combinations <- expand.grid(source_matches, target_matches) 
+    source_target_combinations <- source_target_combinations[-indices, ]
+    # apply intersect() rowwise to both columns in the dataframe of combinations
+    matches <- unlist(map2(group_group_combinations$Var1, group_group_combinations$Var2, intersect))
+    matches <- c(matches, unlist(map2(group_target_combinations$Var1, group_target_combinations$Var2, intersect)))
+    matches <- c(matches, unlist(map2(source_group_combinations$Var1, source_group_combinations$Var2, intersect)))
+    matches <- c(matches, unlist(map2(source_target_combinations$Var1, source_target_combinations$Var2, intersect)))
+    if(!is.null(matches)) {
+      edgelist <- edgelist[matches, ]
+      return(edgelist)
+    } else {
+      return(edgelist)
+    }
   } else {
     return(edgelist)
   }
@@ -180,9 +235,9 @@ ui <- fluidPage(
   tags$head(
     tags$style(
       # suppress error messages in output window
-      # type="text/css",
-      # ".shiny-output-error { visibility:hidden; }",
-      # ".shiny-output-error:before { visibility: hidden; }"
+      type="text/css",
+      ".shiny-output-error { visibility:hidden; }",
+      ".shiny-output-error:before { visibility: hidden; }",
       # custom CSS for Notification button in Bigraph panel
       HTML(".shiny-notification {
              position:fixed;
@@ -451,17 +506,6 @@ server <- function(input, output, session) {
   # Create reactive data. Add edge weights to dataframe filtered_edgelist
   weighted_edgelist <- reactive({
     edgelist <- filtered_edgelist()
-    # isempty <- !sum(dim(edgelist)) > 0
-    # if(isempty) {
-    #   showNotification(id="reduceselection","Too many groups or categories selected.", type = "message", duration=NULL)
-    # } else {
-    #   removeNotification(id="reduceselection")
-    # }
-    #req(!isempty)
-    # shiny::validate(
-    #   need(!isempty, "Selections did not return any results.")
-    # )
-    # edgelist <- filtered_edgelist()
     if(input$mode == "Bipartite") {
       edgelist <- make_weighted(edgelist)
     } else {
