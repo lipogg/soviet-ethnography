@@ -8,9 +8,9 @@
 "evrei / Jews";"slijanie / sblizhenie / fusion / convergence";"107066";"1962_3";"Groups";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "latyshi / Latvians";"slijanie / sblizhenie / fusion / convergence";"107066";"1962_3";"Groups";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "Soviet Union";"development of national in form, socialist in content culture";"110541";"1965_6";"Locations";"present";"Factual Statement by Author";NA
-"Soviet Union";"Sovietization";"110610";"1955_3";"Locations";"present";"Factual Statement by Author";"Rupture"
 "Soviet Union";"modernization / socialist progress";"110610";"1955_3";"Locations";"present";"Factual Statement by Author";"Rupture"
 "Soviet Union";"development of national in form, socialist in content culture";"110610";"1955_3";"Locations";"present";"Factual Statement by Author";"Rupture"
+"Soviet Union";"Sovietization";"110610";"1955_3";"Locations";"present";"Factual Statement by Author";"Rupture"
 "russkij narod / Russians";"Sovietization";"111364";"1955_3";"Groups";NA;"Factual Statement by Author";NA
 "Central Asia / Srednjaja Azija";"modernization / socialist progress";"111704";"1971_4";"Locations";"past: early Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "uzbeki";"slijanie / sblizhenie / fusion / convergence";"114745";"1976_2";"Central Asian titular nations";"present";"Factual Statement by Author";NA
@@ -31,8 +31,8 @@
 "narody Srednej Azii i Kazakhstana";"slijanie / sblizhenie / fusion / convergence";"131740";"1971_4";"Groups";"present";"Factual Statement by Author";NA
 "byvshie musul'manskie regiony SSSR";"failed raskreposshenie zhensshin / failed liberation of women";"132418";"1986_2";"Historical locations";"present";"Factual Statement by Author";NA
 "byvshie musul'manskie regiony SSSR";"lost battle against religion";"132618";"1986_2";"Historical locations";"present";"Factual Statement by Author";NA
-"tjurkojazychnye narody";"estestvennaja assimilacija";"132732";"1990_2";"Groups";NA;NA;NA
-"persy / iranojazychnye narody / Persian-/Iranian-speaking world";"estestvennaja assimilacija";"132732";"1990_2";"Groups";NA;NA;NA
+"tjurkojazychnye narody";"estestvennaja assimilacija / natural assimilation";"132732";"1990_2";"tjurki";NA;NA;NA
+"persy / iranojazychnye narody / Persian-/Iranian-speaking group";"estestvennaja assimilacija / natural assimilation";"132732";"1990_2";"Groups in Iran";NA;NA;NA
 "Soviet Union";"vyravnivanie korenykh nacional'nostej sojuznykh respublik";"168358";"1985_2";"Locations";"present";"Citation other sources of knowledge: f.e. statistics";"Continuity"
 "Soviet Union";"vyravnivanie korenykh nacional'nostej sojuznykh respublik";"168358";"1985_2";"Locations";"past: early Soviet";"Citation other sources of knowledge: f.e. statistics";"Continuity"
 "Soviet Union";"modernization / socialist progress";"168358";"1985_2";"Locations";"present";"Citation other sources of knowledge: f.e. statistics";"Continuity"
@@ -50,8 +50,8 @@
 "uzbeki";"failed raskreposshenie zhensshin / failed liberation of women";"176214";"1985_2";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "turkmeny";"failed modernization";"176214";"1985_2";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "turkmeny";"failed raskreposshenie zhensshin / failed liberation of women";"176214";"1985_2";"Central Asian titular nations";"present";"Factual Statement by Author";NA
-"uzbeki";"slijanie / sblizhenie / fusion / convergence";"178865";"1980_1";"Central Asian titular nations";"past: pre-Soviet";"Factual Statement by Author";NA
-"kirgizy";"slijanie / sblizhenie / fusion / convergence";"178865";"1980_1";"Central Asian titular nations";"past: pre-Soviet";"Factual Statement by Author";NA
+"uzbeki";"pre-Soviet sblizhenie during Russian colonial rule";"178865";"1980_1";"Central Asian titular nations";"past: pre-Soviet";"Factual Statement by Author";NA
+"kirgizy";"pre-Soviet sblizhenie during Russian colonial rule";"178979";"1980_1";"Central Asian titular nations";"past: pre-Soviet";"Factual Statement by Author";NA
 "sel'skie zhiteli korennykh nacional'nostej Srednej Azii";"vyravnivanie korenykh nacional'nostej sojuznykh respublik";"18871";"1985_1";"Groups";"present";"Factual Statement by Author";NA
 "sel'skie zhiteli korennykh nacional'nostej Srednej Azii";"failed modernization";"18871";"1985_1";"Groups";"present";"Factual Statement by Author";NA
 "russkij narod / Russians";"raskreposshenie zhensshin / liberation of women";"20325";"1962_6";"Groups";"past: early Soviet";"Factual Statement by Author";NA
@@ -99,21 +99,18 @@
 "kirgizy";"Sovietization";"29354";"1962_6";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "kirgizy";"development of national in form, socialist in content culture";"29354";"1962_6";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "uzbeki (Afghanistan)";"slijanie / sblizhenie / fusion / convergence";"300212";"1967_4";"Groups in Afghanistan";"present";"Factual Statement by Author";NA
-"uzbeki Fergany";"pre-Soviet sblizhenie during Russian colonial rule";"313054";"1987_1";"uzbeki";"past: pre-Soviet";"Factual Statement by Author";NA
-"uzbekskoe naselenie Fergany (Tajikistan)";"pre-Soviet sblizhenie during Russian colonial rule";"313457";"1987_1";"uzbeki";"past: early Soviet";"Factual Statement by Author";NA
-"uzbekskoe naselenie Fergany (Tajikistan)";"pre-Soviet sblizhenie during Russian colonial rule";"313457";"1987_1";"uzbeki";"past: pre-Soviet";"Factual Statement by Author";NA
-"uzbekskoe naselenie Fergany (Tajikistan)";"slijanie / sblizhenie / fusion / convergence";"313457";"1987_1";"uzbeki";"past: early Soviet";"Factual Statement by Author";NA
-"uzbekskoe naselenie Fergany (Tajikistan)";"slijanie / sblizhenie / fusion / convergence";"313457";"1987_1";"uzbeki";"past: pre-Soviet";"Factual Statement by Author";NA
+"uzbeki Fergany / Uzbeks of Ferghana";"pre-Soviet sblizhenie during Russian colonial rule";"313054";"1987_1";"uzbeki";"past: pre-Soviet";"Factual Statement by Author";NA
+"uzbekskoe naselenie Fergany (Ferghana, Tajikistan)";"slijanie / sblizhenie / fusion / convergence";"313739";"1987_1";"uzbeki";"past: early Soviet";"Factual Statement by Author";NA
 "tjurki-barlacy Surkhandar'inskoj oblasti Uzbekistana";"slijanie / sblizhenie / fusion / convergence";"31421";"1960_1";"tjurki";NA;NA;NA
 "sarty / Sarts";"pre-Soviet sblizhenie during Russian colonial rule";"325436";"1987_1";"Groups";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
-"uzbeki";"modernization / socialist progress";"327603";"1987_1";"Central Asian titular nations";"past: early Soviet";"Factual Statement by Author";NA
 "uzbeki";"slijanie / sblizhenie / fusion / convergence";"327603";"1987_1";"Central Asian titular nations";"past: early Soviet";"Factual Statement by Author";NA
+"uzbeki";"modernization / socialist progress";"327603";"1987_1";"Central Asian titular nations";"past: early Soviet";"Factual Statement by Author";NA
 "russkij narod / Russians";"modernization / socialist progress";"348724";"1971_2";"Groups";"past: early Soviet";"Factual Statement by Author";"Rupture"
 "Kirgizija / Kirgizskaja SSR";"failed modernization";"353238";"1986_3";"Locations";"present";"Factual Statement by Author";NA
 "Kirgizija / Kirgizskaja SSR";"vyravnivanie korenykh nacional'nostej sojuznykh respublik";"353238";"1986_3";"Locations";"present";"Factual Statement by Author";NA
 "Armenija";"failed modernization";"353238";"1986_3";"Locations";"present";"Factual Statement by Author";NA
 "Armenija";"vyravnivanie korenykh nacional'nostej sojuznykh respublik";"353238";"1986_3";"Locations";"present";"Factual Statement by Author";NA
-"rabochie-""cygane""";"slijanie / sblizhenie / fusion / convergence";"356605";"1962_2";"""cygane""";"future";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
+"rabochie-""cygane"" / pejorative exonym for Romani working class";"slijanie / sblizhenie / fusion / convergence";"356605";"1962_2";"""cygane"" / pejorative exonym for the Romani people";"future";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "uzbeki";"slijanie / sblizhenie / fusion / convergence";"356605";"1962_2";"Central Asian titular nations";"future";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "uzbeki";"battle against perezhitki / survivals";"357259";"1967_5";"Central Asian titular nations";"past: early Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "kazakhi";"battle against perezhitki / survivals";"357259";"1967_5";"Central Asian titular nations";"past: early Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
@@ -160,17 +157,17 @@
 "turkmeny";"raskreposshenie zhensshin / liberation of women";"43187";"1962_6";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "turkmeny";"battle against perezhitki / survivals";"43187";"1962_6";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "Eastern and Central regions of Uzbekistan";"slijanie / sblizhenie / fusion / convergence";"46310";"1962_6";"Uzbekistan / Uzbekskaja SSR";"present";"Factual Statement by Author";"Continuity"
-"narody Srednej Azii";"change in pre-socialist historical-economic formations";"464218";"1957_2";"narody Srednej Azii i Kazakhstana";"past: pre-Russian Empire / pre-Russian colonialism";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
+"narody Srednej Azii";"change in pre-socialist socio-economic formations";"464218";"1957_2";"narody Srednej Azii i Kazakhstana";"past: pre-Russian Empire / pre-Russian colonialism";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "kirgizy Dzhirgatal'skogo rajona Tadzhikskoj SSR";"slijanie / sblizhenie / fusion / convergence";"468146";"1955_4";"kirgizy";"present";"Factual Statement by Author";"Rupture"
 "Soviet Union";"raskreposshenie zhensshin / liberation of women";"46897";"1982_3";"Locations";"past: early Soviet";"Factual Statement by Author";NA
 "Soviet Union";"Sovietization";"46897";"1982_3";"Locations";"past: early Soviet";"Factual Statement by Author";NA
 "kirgizy Dzhirgatal'skogo rajona Tadzhikskoj SSR";"slijanie / sblizhenie / fusion / convergence";"469590";"1955_4";"kirgizy";NA;NA;NA
-"""cygane""";"slijanie / sblizhenie / fusion / convergence";"47405";"1960_2";"Groups";"present";"Factual Statement by Author";NA
-"""cygane""";"criticism of the unjust treatment of national / ethnic groups";"47405";"1960_2";"Groups";"present";"Factual Statement by Author";NA
+"""cygane"" / pejorative exonym for the Romani people";"slijanie / sblizhenie / fusion / convergence";"47405";"1960_2";"Groups";"present";"Factual Statement by Author";NA
+"""cygane"" / pejorative exonym for the Romani people";"criticism of the unjust treatment of national / ethnic groups";"47405";"1960_2";"Groups";"present";"Factual Statement by Author";NA
 "sredneaziatskie araby / Central Asian Arabs";"slijanie / sblizhenie / fusion / convergence";"47405";"1960_2";"Groups";"present";"Factual Statement by Author";NA
 "sredneaziatskie araby / Central Asian Arabs";"criticism of the unjust treatment of national / ethnic groups";"47405";"1960_2";"Groups";"present";"Factual Statement by Author";NA
-"persy / iranojazychnye narody / Persian-/Iranian-speaking world";"slijanie / sblizhenie / fusion / convergence";"47405";"1960_2";"Groups";"present";"Factual Statement by Author";NA
-"persy / iranojazychnye narody / Persian-/Iranian-speaking world";"criticism of the unjust treatment of national / ethnic groups";"47405";"1960_2";"Groups";"present";"Factual Statement by Author";NA
+"persy / iranojazychnye narody / Persian-/Iranian-speaking group";"slijanie / sblizhenie / fusion / convergence";"47405";"1960_2";"Groups in Iran";"present";"Factual Statement by Author";NA
+"persy / iranojazychnye narody / Persian-/Iranian-speaking group";"criticism of the unjust treatment of national / ethnic groups";"47405";"1960_2";"Groups in Iran";"present";"Factual Statement by Author";NA
 "uzbeki";"forced assimilation / uzbekizacija";"474529";"1989_1";"Central Asian titular nations";"past: Stalinist era / 1930s-40s";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "uzbeki";"forced assimilation / uzbekizacija";"478446";"1989_1";"Central Asian titular nations";"past: early Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "karakalpaki";"Sovietization";"479596";"1983_6";"Groups";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
@@ -178,9 +175,9 @@
 "karakalpaki";"raskreposshenie zhensshin / liberation of women";"479596";"1983_6";"Groups";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "uzbeki";"forced assimilation / uzbekizacija";"48893";"1991_1";"Central Asian titular nations";"past: early Soviet";"Factual Statement by Author";NA
 "uzbeki";"forced assimilation / uzbekizacija";"49034";"1991_1";"Central Asian titular nations";"past: early Soviet";"Factual Statement by Author";NA
-"tjurkojazychnye narody";"forced assimilation / tjurkizacija";"505083";"1989_4";"Groups";"past: pre-Russian Empire / pre-Russian colonialism";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
-"tjurkskie narody";"failed modernization";"51063";"1983_6";"Groups";"present";NA;NA
-"tjurkskie narody";"lost battle against perezhitki / survivals";"51063";"1983_6";"Groups";"present";NA;NA
+"tjurkojazychnye narody";"forced assimilation / tjurkizacija";"505083";"1989_4";"tjurki";"past: pre-Russian Empire / pre-Russian colonialism";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
+"tjurkskie narody";"failed modernization";"51063";"1983_6";"tjurki";"present";NA;NA
+"tjurkskie narody";"lost battle against perezhitki / survivals";"51063";"1983_6";"tjurki";"present";NA;NA
 "uzbeki";"control over nature / making land arable / osvoenie zemel'";"51463";"1960_2";"Central Asian titular nations";NA;"Factual Statement by Author";NA
 "Uzbekistan / Uzbekskaja SSR";"control over nature / making land arable / osvoenie zemel'";"53518";"1960_2";"Locations";"present";"Factual Statement by Author";NA
 "araby v Uzbekistane";"forced assimilation / uzbekizacija";"542763";"1989_4";"sredneaziatskie araby / Central Asian Arabs";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
@@ -189,10 +186,10 @@
 "uzbeki";"slijanie / sblizhenie / fusion / convergence";"55342";"1982_5";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "uzbeki";"vyravnivanie korenykh nacional'nostej sojuznykh respublik";"55802";"1990_3";"Central Asian titular nations";NA;"Factual Statement by Author";NA
 "uzbeki";"slijanie / sblizhenie / fusion / convergence";"56816";"1979_3";"Central Asian titular nations";"present";"Factual Statement by Author";"Continuity"
-"uzbeki iz gornykh rajonov";"control over nature / making land arable / osvoenie zemel'";"571824";"1954_4";"uzbeki";"past: pre-Soviet";"Literature Review";"Continuity"
 "uzbeki iz gornykh rajonov";"control over nature / making land arable / osvoenie zemel'";"571824";"1954_4";"uzbeki";"past: Stalinist era / 1930s-40s";"Literature Review";"Continuity"
+"uzbeki iz gornykh rajonov";"control over nature / making land arable / osvoenie zemel'";"571824";"1954_4";"uzbeki";"past: pre-Soviet";"Literature Review";"Continuity"
 "sredneaziatskie araby / Central Asian Arabs";"slijanie / sblizhenie / fusion / convergence";"57394";"1964-6";"Groups";NA;"Factual Statement by Author";NA
-"""cygane""";"slijanie / sblizhenie / fusion / convergence";"57394";"1964-6";"Groups";NA;"Factual Statement by Author";NA
+"""cygane"" / pejorative exonym for the Romani people";"slijanie / sblizhenie / fusion / convergence";"57394";"1964-6";"Groups";NA;"Factual Statement by Author";NA
 "ujgury";"slijanie / sblizhenie / fusion / convergence";"57394";"1964-6";"Groups";NA;"Factual Statement by Author";NA
 "Uzbekistan / Uzbekskaja SSR";"raskreposshenie zhensshin / liberation of women";"60571";"1956_3";"Locations";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "Armenija";"raskreposshenie zhensshin / liberation of women";"60571";"1956_3";"Locations";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
@@ -200,7 +197,7 @@
 "uzbeki";"slijanie / sblizhenie / fusion / convergence";"608860";"1977_5";"Central Asian titular nations";"past";"Literature Review";"Continuity"
 "uzbeki";"slijanie / sblizhenie / fusion / convergence";"608860";"1977_5";"Central Asian titular nations";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";"Continuity"
 "uzbeki";"slijanie / sblizhenie / fusion / convergence";"608860";"1977_5";"Central Asian titular nations";"present";"Literature Review";"Continuity"
-"tjurkojazychnye narody";"slijanie / sblizhenie / fusion / convergence";"617001";"1977_5";"Groups";"past: pre-Soviet";"Literature Review";NA
+"tjurkojazychnye narody";"slijanie / sblizhenie / fusion / convergence";"617001";"1977_5";"tjurki";"past: pre-Soviet";"Literature Review";NA
 "Uzbekistan / Uzbekskaja SSR";"slijanie / sblizhenie / fusion / convergence";"61776";"1979_3";"Locations";"present";"Factual Statement by Author";"Continuity"
 "Uzbekistan / Uzbekskaja SSR";"slijanie / sblizhenie / fusion / convergence";"61938";"1979_3";"Locations";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
 "Uzbekistan / Uzbekskaja SSR";"slijanie / sblizhenie / fusion / convergence";"63696";"1979_3";"Locations";"present";"Factual Statement by Author";"Continuity"
@@ -226,6 +223,7 @@
 "Soviet Union";"slijanie / sblizhenie / fusion / convergence";"66453";"1982_6";"Locations";"present";"Factual Statement by Author";NA
 "Soviet Union";"Sovietization";"66453";"1982_6";"Locations";"present";"Factual Statement by Author";NA
 "Uzbek women / uzbechki";"raskreposshenie zhensshin / liberation of women";"66744";"1986_1";"uzbeki";"past: pre-Soviet";"Factual Statement by Author";NA
+"lokajcy";"slijanie / sblizhenie / fusion / convergence";"70221";"1955_3";"uzbeki";"present";"Factual Statement by Author";"Continuity"
 "uzbeki";"control over nature / making land arable / osvoenie zemel'";"70575";"1961_4";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "turkmeny";"control over nature / making land arable / osvoenie zemel'";"70575";"1961_4";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "uzbeki";"forced assimilation / uzbekizacija";"70630";"1991_1";"Central Asian titular nations";"present";"Factual Statement by Author";NA
@@ -235,7 +233,7 @@
 "Uzbek women / uzbechki";"raskreposshenie zhensshin / liberation of women";"74911";"1986_1";"uzbeki";"past: early Soviet";"Factual Statement by Author";NA
 "uzbeki";"slijanie / sblizhenie / fusion / convergence";"75039";"1972_4";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "uzbeki";"modernization / socialist progress";"75039";"1972_4";"Central Asian titular nations";"present";"Factual Statement by Author";NA
-"uzbeki Vostochnoj Bukhary (Bukharskoe khanstvo)";"pre-Soviet sblizhenie during Russian colonial rule";"76348";"1972_5";"uzbeki";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";"Continuity"
+"uzbeki Vostochnoj Bukhary (Bukharskoe khanstvo)";"pre-Soviet sblizhenie during Russian colonial rule";"76348";"1972_5";"Historical groups";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";"Continuity"
 "Kazakhstan / Kazakhskaja SSR";"modernization / socialist progress";"7992";"1964-5";"Locations";"past: early Soviet";"Factual Statement by Author";"Continuity"
 "Kazakhstan / Kazakhskaja SSR";"socialist internationalism / druzhba narodov";"7992";"1964-5";"Locations";"past: early Soviet";"Factual Statement by Author";"Continuity"
 "Kirgizija / Kirgizskaja SSR";"modernization / socialist progress";"7992";"1964-5";"Locations";"past: early Soviet";"Factual Statement by Author";"Continuity"
@@ -246,7 +244,7 @@
 "Central Asia / Srednjaja Azija";"closing gap between city and countryside / village";"81253";"1979_3";"Locations";"present";"Factual Statement by Author";"Rupture"
 "Central Asia / Srednjaja Azija";"modernization / socialist progress";"81253";"1979_3";"Locations";"present";"Factual Statement by Author";"Rupture"
 "kirgizy";"slijanie / sblizhenie / fusion / convergence";"81411";"1962_3";"Central Asian titular nations";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
-"rabochie-""cygane""";"slijanie / sblizhenie / fusion / convergence";"81861";"1962_3";"""cygane""";NA;"Factual Statement by Author";NA
+"rabochie-""cygane"" / pejorative exonym for Romani working class";"slijanie / sblizhenie / fusion / convergence";"81861";"1962_3";"""cygane"" / pejorative exonym for the Romani people";NA;"Factual Statement by Author";NA
 "russkij narod / Russians";"development of national in form, socialist in content culture";"81902";"1979_3";"Groups";"past: early Soviet";"Factual Statement by Author";NA
 "russkij narod / Russians";"development of national in form, socialist in content culture";"83524";"1979_3";"Groups";"past: early Soviet";"Factual Statement by Author";NA
 """Rossija"" / Russian Empire";"pre-Soviet modernization during Russian colonial rule";"85337";"1955_3";"Historical locations";NA;"Citation Research, Secondary Literature, doklad, soobsshenie";NA

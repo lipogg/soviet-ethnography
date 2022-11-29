@@ -66,10 +66,7 @@ read_nodelist <- function(input_2){
   return(nodelist)
 }
 
-# agrepl for some matches like Afghanistan, but grepl for others, like "tadzhiki" ? 
-# Currently still unable to select more than one group if groups are matched with agrepl instead of grepl
-# previous version: edgelist<- subset(edgelist, group %in% input_groups | source %in% input_groups)
-# agrepl(paste(input_groups,collapse="|"), edgelist$group, max.distance=1)
+
 # Return input group and all its subgroups (input group is value in group column, not source column, in this case)
 filter_groups_bipartite <- function(edgelist, input_groups) {
   if(length(input_groups) > 0) { # input_groups not empty: either group_2 or group_3 was selected and !is.null(input$group_2) || !is.null(input$group_3)
@@ -94,7 +91,7 @@ filter_groups_bipartite <- function(edgelist, input_groups) {
 # which matched matched the search group input. vector_1[[1]] and vector_2[[1]] thus contain
 # indices of rows from the input edgelist that matched with the same element in the 
 # input_groups vector. However, when more than one group is selected, the edgelist 
-# is be filtered for rows where different elements in the input_groups vector were matched.
+# is filtered for rows where different elements in the input_groups vector were matched.
 helper <- function(n) {
   vec <- c()
   for(i in 1:n){
@@ -103,8 +100,8 @@ helper <- function(n) {
   return(vec)
 }
 
-# return all rows where both groups in the group column match the input_groups vector
-# change this to: either source or group 1 in group column and either target or group 2 in group column !
+# Return all rows where either source or group 1 in group column and either target or 
+# group 2 in group column match the input_groups vector.
 # If one group is selected, display all edges between subgroups of the selected category
 # If more than one group is selected, display only edges between subgroups of different main groups. 
 # F.e.: group 1 = tadzhiki, group 2 = uzbeki. Edges between tadzhiki Seravshana and uzbeki Samarkanda 
@@ -133,7 +130,7 @@ filter_groups_unipartite <- function(edgelist, input_groups) {
     return(edgelist)
   } else if(length(input_groups) > 1) { # more than one category selected
     # get list of list of all row indices that matched each of the input groups. 
-    # i.e. for input_groups <- c("tadzhiki", "uzbeki"), group_matches_3 is a list 
+    # i.e. for input_groups <- c("tadzhiki", "uzbeki"), group_matches is a list 
     # of two lists: The first list contains indices of rows from the input edgelist, 
     # where "tadzhiki" returned a match for the first element in the "group" column. 
     group_matches_1 <- map(input_groups, grep, temp[,1])  # return row indices
@@ -155,11 +152,12 @@ filter_groups_unipartite <- function(edgelist, input_groups) {
     # get df of row indices of all combinations between source_matches and target_matches
     source_target_combinations <- expand.grid(source_matches, target_matches) 
     source_target_combinations <- source_target_combinations[-indices, ]
-    # apply intersect() rowwise to both columns in the dataframe of combinations
+    # apply intersect() rowwise to both columns in the dataframe of combinations, return unique matches
     matches <- unlist(map2(group_group_combinations$Var1, group_group_combinations$Var2, intersect))
     matches <- c(matches, unlist(map2(group_target_combinations$Var1, group_target_combinations$Var2, intersect)))
     matches <- c(matches, unlist(map2(source_group_combinations$Var1, source_group_combinations$Var2, intersect)))
     matches <- c(matches, unlist(map2(source_target_combinations$Var1, source_target_combinations$Var2, intersect)))
+    matches <- unique(matches)
     if(!is.null(matches)) {
       edgelist <- edgelist[matches, ]
       return(edgelist)
@@ -314,11 +312,18 @@ ui <- fluidPage(
             choices = c("tadzhiki", #Tajiks
                         "uzbeki", 
                         "Pamir groups", 
-                        "Kazakhs",
-                        "Kyrgyz", 
+                        "kazakhi",
+                        "kirgizy",
+                        "turkmeny",
                         "Central Asian titular nations", 
                         "Historical groups",
-                        "Historical locations")
+                        "Historical locations",
+                        "Tajikistan",
+                        "Uzbekistan",
+                        "Yaghnob", 
+                        "Northern Tajikistan", 
+                        "Southern Tajikistan", 
+                        "Tajiks outside Tajikistan")
           )
         ),
         
@@ -328,12 +333,21 @@ ui <- fluidPage(
             inputId = "group_3",
             label = NULL,
             choices = c("gornye tadzhiki", 
-                        "ravninnye tadzhiki", 
-                        "Central Asia", 
+                        "ravninnye tadzhiki",
+                        "plainland regions",
+                        "mountainous regions",
+                        "Zeravshan", 
+                        "Ferghana",
                         "Soviet Union", 
                         "russkij narod / Russians",
+                        "tjurki",
                         "Afghanistan", 
-                        "Iran", 
+                        "Iran",
+                        "Darvaz",
+                        "Karategin",
+                        "Kuljab",
+                        "urban population",
+                        "rural population",
                         "women")
           )
         )
@@ -399,15 +413,15 @@ server <- function(input, output, session) {
                                        "material'naja kul'tura", "dukhovnaja kul'tura",
                                        "language / spoken","language / terminology", "prazdniki", "folklore",
                                        "intermarriages", "weddings", "child birth", "family life","death / funerals",
-                                       "medicine / healthcare"),)
+                                       "medicine / healthcare", "identity / self-description", "external identification"),)
       updateCheckboxGroupInput(session, "category_3",
                              selected=character(0),
                              choices=c("perezhitki", "religion", "beliefs / myths",
-                                       "physical features",'"racial type" / rasovyj tip / rasa', 
-                                       "ethnogenesis", "etnos / ethnos", "identity / self-description", "external identification",
-                                      "obraz zhizni", "kolkhozes", "agriculture", 
+                                       "physical features,  anthropometry,  anthroposcopy",'"racial type" / rasovyj tip / rasa', 
+                                       "ethnogenesis", "etnos / ethnos", 
                                       "gender relations / polozhenie zhensshiny",
-                                      "family structure", "social formation", "mode of production"),)
+                                      "family structure", "social formation", "mode of production",
+                                      "obraz zhizni", "kolkhozes", "agriculture"),)
     } else if (input$category == "Attributes") {
       updateCheckboxGroupInput(session, "category_2",
                                selected=character(0),
@@ -415,8 +429,8 @@ server <- function(input, output, session) {
                                          "suppressed / ugnetennyj / exploited", "unequal", "egalitarian / liberated",
                                          "undemocratic / hierarchical / despotic", "democratic", "collectivist",
                                          "atheist / non-spiritual / materialist",
-                                         "educated", "obespechenno", "urban", "kult'turno",
-                                         "Muslim", "zoroastrijskij", "religious", "superstitious",
+                                         "educated", "obespechenno", "urban", "kul'turno",
+                                         "Muslim", "Zoroastrian", "religious", "superstitious",
                                          "feudal","patriarchal", "matriarchal",
                                          "loyal / trustworthy", "disloyal / suspect", "peaceful", "belligerent"),)
       updateCheckboxGroupInput(session, "category_3",

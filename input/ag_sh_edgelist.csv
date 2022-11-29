@@ -1,40 +1,41 @@
 "source";"target";"startpos";"issue";"group";"tempi";"type_of_statement";"past_present_relation"
-"Gorno-Badakhshan / GBAO";"nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x";"103732";"1965_6";"Locations";"past: early Soviet";NA;NA
+"Gorno-Badakhshan / Sovetskij Badakhshan / GBAO";"nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x";"103732";"1965_6";"Locations";"past: early Soviet";NA;NA
 "Tajikistan / TadzhSSR";"nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x";"103732";"1965_6";"Locations";"past: early Soviet";NA;NA
-"tadzhiki";"process urbanizacii / urbanizacija";"110610";"1955_3";"Groups";"present";"Factual Statement by Author";"Rupture"
 "Soviet Union";"process urbanizacii / urbanizacija";"110610";"1955_3";"Locations";"present";"Factual Statement by Author";"Rupture"
+"tadzhiki";"process urbanizacii / urbanizacija";"110610";"1955_3";"Groups";"present";"Factual Statement by Author";"Rupture"
 "Central Asia / Srednjaja Azija";"nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x";"111704";"1971_4";"Locations";"past: early Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
-"ravninnye oblasty / rajony Tadzhikistana";"massovye pereselenija / forced resettlements 1940s-early 1950s";"115389";"1955_3";"Tajikistan / TadzhSSR";"present";"Factual Statement by Author";"Rupture"
-"gornye oblasti / rajony Tadzhikistana / gornyj Tadzhikistan";"massovye pereselenija / forced resettlements 1940s-early 1950s";"115389";"1955_3";"Tajikistan / TadzhSSR";"present";"Factual Statement by Author";"Rupture"
+"gornye oblasti Tadzh. / mountainous regions of Tajikistan";"massovye pereselenija / forced resettlements 1940s-early 1950s";"115389";"1955_3";"Tajikistan / TadzhSSR";"present";"Factual Statement by Author";"Rupture"
+"ravninnye oblasti Tadzh. / plainland regions of Tajikistan";"massovye pereselenija / forced resettlements 1940s-early 1950s";"115389";"1955_3";"Tajikistan / TadzhSSR";"present";"Factual Statement by Author";"Rupture"
 "verkhovja Jagnoba / Yaghnob";"massovye pereselenija / forced resettlements 1960s - 1970s";"116085";"1989_5";"Zeravshan";"present";"Factual Statement by Author";NA
 "tadzhiki Nuratinskogo khrebta";"massovye pereselenija / forced resettlements late 1920s-1930s";"12129";"1964_1";"gornye tadzhiki";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
 "Leninabadskij rajon / oblast' / kraj";"process urbanizacii / urbanizacija";"130301";"1990_2";"Northern Tajikistan";"past: early Soviet";"Factual Statement by Author";NA
 "Leninabadskij rajon / oblast' / kraj";"massovye pereselenija / forced resettlements late 1920s-1930s";"130301";"1990_2";"Northern Tajikistan";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki Jagnoba";"massovye pereselenija / forced resettlements 1960s - 1970s";"131404";"1990_2";"gornye tadzhiki";NA;"Factual Statement by Author";NA
-"tadzhiki Jagnoba";"process urbanizacii / urbanizacija";"131404";"1990_2";"gornye tadzhiki";NA;"Factual Statement by Author";NA
-"Golodnaja i Dal'vershinskaja step'";"massovye pereselenija / forced resettlements 1960s - 1970s";"131404";"1990_2";"Ferghana / Ferganskaja dolina";NA;"Factual Statement by Author";NA
-"Golodnaja i Dal'vershinskaja step'";"process urbanizacii / urbanizacija";"131404";"1990_2";"Ferghana / Ferganskaja dolina";NA;"Factual Statement by Author";NA
-"tadzhiki-matchincy";"massovye pereselenija / forced resettlements 1960s - 1970s";"131404";"1990_2";"gornye tadzhiki";NA;"Factual Statement by Author";NA
+"Golodnaja i Dal'verzinskaja step'";"process urbanizacii / urbanizacija";"131404";"1990_2";"Ferghana / Ferganskaja dolina";NA;"Factual Statement by Author";NA
+"Golodnaja i Dal'verzinskaja step'";"massovye pereselenija / forced resettlements 1960s - 1970s";"131404";"1990_2";"Ferghana / Ferganskaja dolina";NA;"Factual Statement by Author";NA
+"tadzhiki Jagnoba / Tajiks of Yaghnob";"process urbanizacii / urbanizacija";"131404";"1990_2";"gornye tadzhiki";NA;"Factual Statement by Author";NA
+"tadzhiki Jagnoba / Tajiks of Yaghnob";"massovye pereselenija / forced resettlements 1960s - 1970s";"131404";"1990_2";"gornye tadzhiki";NA;"Factual Statement by Author";NA
 "tadzhiki-matchincy";"process urbanizacii / urbanizacija";"131404";"1990_2";"gornye tadzhiki";NA;"Factual Statement by Author";NA
+"tadzhiki-matchincy";"massovye pereselenija / forced resettlements 1960s - 1970s";"131404";"1990_2";"gornye tadzhiki";NA;"Factual Statement by Author";NA
 "jazgulemcy";"massovye pereselenija / forced resettlements 1960s - 1970s";"141823";"1989_5";"Pamir groups";NA;"Factual Statement by Author";NA
 "roshorvcy";"massovye pereselenija / forced resettlements 1960s - 1970s";"141823";"1989_5";"Pamir groups";NA;"Factual Statement by Author";NA
+"jagnobcy / Yaghnobis";"massovye pereselenija / forced resettlements 1960s - 1970s";"141823";"1989_5";"groups in mountainous regions";NA;"Factual Statement by Author";NA
 "bartangcy";"massovye pereselenija / forced resettlements 1960s - 1970s";"141823";"1989_5";"Pamir groups";NA;"Factual Statement by Author";NA
-"jagnobcy / Yaghnobis";"massovye pereselenija / forced resettlements 1960s - 1970s";"141823";"1989_5";"Groups";NA;"Factual Statement by Author";NA
-"verkhovya Matchi";"massovye pereselenija / forced resettlements 1960s - 1970s";"171363";"1982_5";"gornye oblasti / rajony Tadzhikistana / gornyj Tadzhikistan";"present";"Factual Statement by Author";"Rupture"
-"gornye oblasti / rajony Tadzhikistana / gornyj Tadzhikistan";"massovye pereselenija / forced resettlements 1960s - 1970s";"171363";"1982_5";"Tajikistan / TadzhSSR";"present";"Factual Statement by Author";"Rupture"
+"verkhovya Matchi";"massovye pereselenija / forced resettlements 1960s - 1970s";"171363";"1982_5";"gornyj severnyj Tadzh./ mountainous regions Northern Tajikistan";"present";"Factual Statement by Author";"Rupture"
+"gornye oblasti Tadzh. / mountainous regions of Tajikistan";"massovye pereselenija / forced resettlements 1960s - 1970s";"171363";"1982_5";"Tajikistan / TadzhSSR";"present";"Factual Statement by Author";"Rupture"
 "russkij narod / Russians";"process urbanizacii / urbanizacija";"20325";"1962_6";"Groups";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
 "russkij narod / Russians";"process urbanizacii / urbanizacija";"20325";"1962_6";"Groups";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhik women / tadzhichki";"process urbanizacii / urbanizacija";"20325";"1962_6";"tadzhiki";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
-"tadzhik women / tadzhichki";"process urbanizacii / urbanizacija";"20325";"1962_6";"tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
+"Tajik women / tadzhichki";"process urbanizacii / urbanizacija";"20325";"1962_6";"tadzhiki";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
+"Tajik women / tadzhichki";"process urbanizacii / urbanizacija";"20325";"1962_6";"tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
 "Leninabadskij rajon / oblast' / kraj";"construction of Bol'shoj Ferganskij kanal 1938-1940";"207461";"1955_4";"Northern Tajikistan";"present";NA;NA
 "tadzhikskij khlopkovodcheskij kolkhoz v Chkalovske";"construction of Bol'shoj Ferganskij kanal 1938-1940";"207461";"1955_4";"Leninabadskij rajon / oblast' / kraj";"present";NA;NA
+"Chkalovsk / Kystakoz / Qistaqŭz / Kostakoz";"construction of Bol'shoj Ferganskij kanal 1938-1940";"213815";"1955_4";"Leninabadskij rajon / oblast' / kraj";"past: pre-Russian Empire / pre-Russian colonialism";NA;"Rupture"
 "Leninabadskij rajon / oblast' / kraj";"zemel'no-vodnaja reforma 1921-1922, 1925";"236847";"1955_4";"Northern Tajikistan";"past: early Soviet";NA;NA
+"kirgizy";"process urbanizacii / urbanizacija";"29354";"1962_6";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "turkmeny";"process urbanizacii / urbanizacija";"29354";"1962_6";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "kazakhi";"process urbanizacii / urbanizacija";"29354";"1962_6";"Central Asian titular nations";"present";"Factual Statement by Author";NA
-"kirgizy";"process urbanizacii / urbanizacija";"29354";"1962_6";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "tadzhiki";"process urbanizacii / urbanizacija";"29354";"1962_6";"Groups";"present";"Factual Statement by Author";NA
-"ravninnye tadzhiki";"process nacional'noj konsolidacii tadzhikskogo naroda";"327164";"1987_1";"tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
-"gornye tadzhiki";"process nacional'noj konsolidacii tadzhikskogo naroda";"327164";"1987_1";"tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
+"ravninnye tadzhiki";"process nacional'noj konsolidacii tadzhikskogo naroda";"327164";"1987_1";"groups in plainland regions";"past: early Soviet";"Factual Statement by Author";NA
+"gornye tadzhiki";"process nacional'noj konsolidacii tadzhikskogo naroda";"327164";"1987_1";"groups in mountainous regions";"past: early Soviet";"Factual Statement by Author";NA
 "tadzhiki";"process nacional'noj konsolidacii tadzhikskogo naroda";"345078";"1963_1";"Groups";"present";"Factual Statement by Author";NA
 "naselenie / zhiteli Sovetskogo Badakhshana";"process nacional'noj konsolidacii tadzhikskogo naroda";"345078";"1963_1";"Pamir groups";"present";"Factual Statement by Author";NA
 "Vakhio-Bolo";"Establishment of trust ""Tadzhikzoloto"" early 1930s";"347057";"1971_2";"pritoki r. Vakhsh";"past: early Soviet";"Factual Statement by Author";"Rupture"
@@ -43,77 +44,80 @@
 "Vakhio-Bolo";"Establishment of trust ""Tadzhikzoloto"" early 1930s";"350758";"1971_2";"pritoki r. Vakhsh";"past: early Soviet";NA;"Rupture"
 "Vakhio-Bolo";"gody kollektivizacii";"351291";"1971_2";"pritoki r. Vakhsh";"past: Stalinist era / 1930s-40s";NA;"Rupture"
 "Vakhio-Bolo";"massovye pereselenija / forced resettlements late 1920s-1930s";"351291";"1971_2";"pritoki r. Vakhsh";"past: Stalinist era / 1930s-40s";NA;"Rupture"
-"gornye oblasti / rajony Tadzhikistana / gornyj Tadzhikistan";"gody kollektivizacii";"351291";"1971_2";"Tajikistan / TadzhSSR";"past: Stalinist era / 1930s-40s";NA;"Rupture"
-"gornye oblasti / rajony Tadzhikistana / gornyj Tadzhikistan";"massovye pereselenija / forced resettlements late 1920s-1930s";"351291";"1971_2";"Tajikistan / TadzhSSR";"past: Stalinist era / 1930s-40s";NA;"Rupture"
-"gorcy Tadzhikistana";"gody kollektivizacii";"351291";"1971_2";"Groups";"past: Stalinist era / 1930s-40s";NA;"Rupture"
-"gorcy Tadzhikistana";"massovye pereselenija / forced resettlements late 1920s-1930s";"351291";"1971_2";"Groups";"past: Stalinist era / 1930s-40s";NA;"Rupture"
-"ravninnye oblasty / rajony Tadzhikistana";"gody kollektivizacii";"351291";"1971_2";"Tajikistan / TadzhSSR";"past: Stalinist era / 1930s-40s";NA;"Rupture"
-"ravninnye oblasty / rajony Tadzhikistana";"massovye pereselenija / forced resettlements late 1920s-1930s";"351291";"1971_2";"Tajikistan / TadzhSSR";"past: Stalinist era / 1930s-40s";NA;"Rupture"
+"gornye oblasti Tadzh. / mountainous regions of Tajikistan";"gody kollektivizacii";"351291";"1971_2";"Tajikistan / TadzhSSR";"past: Stalinist era / 1930s-40s";NA;"Rupture"
+"gornye oblasti Tadzh. / mountainous regions of Tajikistan";"massovye pereselenija / forced resettlements late 1920s-1930s";"351291";"1971_2";"Tajikistan / TadzhSSR";"past: Stalinist era / 1930s-40s";NA;"Rupture"
+"gorcy Tadzhikistana / mountaineers of Tajikistan";"gody kollektivizacii";"351291";"1971_2";"gornye tadzhiki";"past: Stalinist era / 1930s-40s";NA;"Rupture"
+"gorcy Tadzhikistana / mountaineers of Tajikistan";"massovye pereselenija / forced resettlements late 1920s-1930s";"351291";"1971_2";"gornye tadzhiki";"past: Stalinist era / 1930s-40s";NA;"Rupture"
+"ravninnye oblasti Tadzh. / plainland regions of Tajikistan";"gody kollektivizacii";"351291";"1971_2";"Tajikistan / TadzhSSR";"past: Stalinist era / 1930s-40s";NA;"Rupture"
+"ravninnye oblasti Tadzh. / plainland regions of Tajikistan";"massovye pereselenija / forced resettlements late 1920s-1930s";"351291";"1971_2";"Tajikistan / TadzhSSR";"past: Stalinist era / 1930s-40s";NA;"Rupture"
 "tadzhiki";"perekhod k osedlosti Sredneaziatskikh kochevnikov nachalo XXv.";"35574";"1964-6";"Groups";NA;NA;NA
 "kirgizy";"perekhod k osedlosti Sredneaziatskikh kochevnikov nachalo XXv.";"35574";"1964-6";"Central Asian titular nations";NA;NA;NA
 "Tajikistan / TadzhSSR";"process urbanizacii / urbanizacija";"364182";"1984_3";"Locations";"present";"Factual Statement by Author";NA
+"Uzbekistan / Uzbekskaja SSR";"process urbanizacii / urbanizacija";"364182";"1984_3";"Locations";"present";"Factual Statement by Author";NA
 "Kazakhstan / Kazakhskaja SSR";"process urbanizacii / urbanizacija";"364182";"1984_3";"Locations";"present";"Factual Statement by Author";NA
 "Kirgizija / Kirgizskaja SSR";"process urbanizacii / urbanizacija";"364182";"1984_3";"Locations";"present";"Factual Statement by Author";NA
-"Uzbekistan / Uzbekskaja SSR";"process urbanizacii / urbanizacija";"364182";"1984_3";"Locations";"present";"Factual Statement by Author";NA
 "tadzhiki";"process nacional'noj konsolidacii tadzhikskogo naroda";"369983";"1971_6";"Groups";"present";"Factual Statement by Author";"Continuity"
-"tadzhiki";"process nacional'noj konsolidacii tadzhikskogo naroda";"375867";"1971_6";"Groups";"past: early Soviet";"Factual Statement by Author";NA
 "tadzhiki";"process nacional'noj konsolidacii tadzhikskogo naroda";"375867";"1971_6";"Groups";"present";"Factual Statement by Author";NA
-"uzbeki";"process nacional'noj konsolidacii tadzhikskogo naroda";"375867";"1971_6";"Central Asian titular nations";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki";"process nacional'noj konsolidacii tadzhikskogo naroda";"375867";"1971_6";"Groups";"past: early Soviet";"Factual Statement by Author";NA
 "uzbeki";"process nacional'noj konsolidacii tadzhikskogo naroda";"375867";"1971_6";"Central Asian titular nations";"present";"Factual Statement by Author";NA
-"tadzhiki";"process nacional'noj konsolidacii tadzhikskogo naroda";"376772";"1971_6";"Groups";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki";"process nacional'noj konsolidacii tadzhikskogo naroda";"376772";"1971_6";"Groups";"present";"Factual Statement by Author";NA
-"russkij narod / Russians";"process nacional'noj konsolidacii tadzhikskogo naroda";"376772";"1971_6";"Groups";"past: early Soviet";"Factual Statement by Author";NA
+"uzbeki";"process nacional'noj konsolidacii tadzhikskogo naroda";"375867";"1971_6";"Central Asian titular nations";"past: early Soviet";"Factual Statement by Author";NA
 "russkij narod / Russians";"process nacional'noj konsolidacii tadzhikskogo naroda";"376772";"1971_6";"Groups";"present";"Factual Statement by Author";NA
-"kirgizy";"nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x";"379619";"1966_1";"Central Asian titular nations";"past: early Soviet";NA;"Rupture"
+"russkij narod / Russians";"process nacional'noj konsolidacii tadzhikskogo naroda";"376772";"1971_6";"Groups";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki";"process nacional'noj konsolidacii tadzhikskogo naroda";"376772";"1971_6";"Groups";"present";"Factual Statement by Author";NA
+"tadzhiki";"process nacional'noj konsolidacii tadzhikskogo naroda";"376772";"1971_6";"Groups";"past: early Soviet";"Factual Statement by Author";NA
 "uzbeki";"nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x";"379619";"1966_1";"Central Asian titular nations";"past: early Soviet";NA;"Rupture"
 "turkmeny";"nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x";"379619";"1966_1";"Central Asian titular nations";"past: early Soviet";NA;"Rupture"
+"kirgizy";"nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x";"379619";"1966_1";"Central Asian titular nations";"past: early Soviet";NA;"Rupture"
 "tadzhiki";"nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x";"379619";"1966_1";"Groups";"past: early Soviet";NA;"Rupture"
 "kirgizy Karategina";"perekhod k osedlosti Sredneaziatskikh kochevnikov nachalo XXv.";"392426";"1984_4";"kirgizy";"past: pre-Soviet";"Factual Statement by Author";NA
 "tadzhiki";"perekhod k osedlosti Sredneaziatskikh kochevnikov nachalo XXv.";"392426";"1984_4";"Groups";"past: pre-Soviet";"Factual Statement by Author";NA
 "tadzhiki";"massovye pereselenija / forced resettlements 1940s-early 1950s";"39263";"1961_4";"Groups";"present";"Factual Statement by Author";NA
 "pripamirskie narodnosti / narody / pripamircy";"massovye pereselenija / forced resettlements 1940s-early 1950s";"39263";"1961_4";"Pamir groups";"present";"Factual Statement by Author";NA
-"jagnobcy / Yaghnobis";"massovye pereselenija / forced resettlements 1940s-early 1950s";"39263";"1961_4";"Groups";"present";"Factual Statement by Author";NA
-"gornye tadzhiki";"perekhod k osedlosti Sredneaziatskikh kochevnikov nachalo XXv.";"408581";"1984_4";"tadzhiki";"past: pre-Soviet";"Factual Statement by Author";NA
+"jagnobcy / Yaghnobis";"massovye pereselenija / forced resettlements 1940s-early 1950s";"39263";"1961_4";"groups in mountainous regions";"present";"Factual Statement by Author";NA
+"gornye tadzhiki";"perekhod k osedlosti Sredneaziatskikh kochevnikov nachalo XXv.";"408581";"1984_4";"groups in mountainous regions";"past: pre-Soviet";"Factual Statement by Author";NA
 "kirgizy Karategina";"perekhod k osedlosti Sredneaziatskikh kochevnikov nachalo XXv.";"408581";"1984_4";"kirgizy";"past: pre-Soviet";"Factual Statement by Author";NA
-"gornye tadzhiki";"gody kollektivizacii";"419541";"1954_3";"tadzhiki";"past: early Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
-"gornye tadzhiki";"gody kollektivizacii";"419734";"1954_3";"tadzhiki";"past: early Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";"Rupture"
-"Karategin";"gody kollektivizacii";"419734";"1954_3";"gornyj juzhnyj Tadzhikistan";"past: early Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";"Rupture"
+"gornye tadzhiki";"gody kollektivizacii";"419541";"1954_3";"groups in mountainous regions";"past: early Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
+"gornye tadzhiki";"gody kollektivizacii";"419734";"1954_3";"groups in mountainous regions";"past: early Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";"Rupture"
+"Karategin";"gody kollektivizacii";"419734";"1954_3";"gornyj juzhnyj Tadzh. / mountainous regions Southern Tajikistan";"past: early Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";"Rupture"
 "Soviet Union";"gody kollektivizacii";"419734";"1954_3";"Locations";"past: early Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";"Rupture"
-"ravninnye oblasty / rajony juzhnogo Zadzhikistana";"massovye pereselenija / forced resettlements 1940s-early 1950s";"419785";"1954_3";"ravninnye oblasty / rajony Tadzhikistana";"present";"Factual Statement by Author";"Rupture"
-"ravninnye oblasty / rajony juzhnogo Zadzhikistana";"process urbanizacii / urbanizacija";"419785";"1954_3";"ravninnye oblasty / rajony Tadzhikistana";"present";"Factual Statement by Author";"Rupture"
-"gornye tadzhiki";"massovye pereselenija / forced resettlements 1940s-early 1950s";"419785";"1954_3";"tadzhiki";"present";"Factual Statement by Author";"Rupture"
-"gornye tadzhiki";"process urbanizacii / urbanizacija";"419785";"1954_3";"tadzhiki";"present";"Factual Statement by Author";"Rupture"
-"prisyrdar'inskij rajon";"massovye pereselenija / forced resettlements 1940s-early 1950s";"43508";"1964_1";"Northern Tajikistan";"present";"Factual Statement by Author";NA
-"prisyrdar'inskij rajon";"massovye pereselenija / forced resettlements 1940s-early 1950s";"43508";"1964_1";"Northern Tajikistan";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
+"ravniny juzhnogo Tadzhikistana / Southern Tajikistan plainlands";"massovye pereselenija / forced resettlements 1940s-early 1950s";"419785";"1954_3";"ravninnye oblasti Tadzh. / plainland regions of Tajikistan";"present";"Factual Statement by Author";"Rupture"
+"ravniny juzhnogo Tadzhikistana / Southern Tajikistan plainlands";"process urbanizacii / urbanizacija";"419785";"1954_3";"ravninnye oblasti Tadzh. / plainland regions of Tajikistan";"present";"Factual Statement by Author";"Rupture"
+"gornye tadzhiki";"massovye pereselenija / forced resettlements 1940s-early 1950s";"419785";"1954_3";"groups in mountainous regions";"present";"Factual Statement by Author";"Rupture"
+"gornye tadzhiki";"process urbanizacii / urbanizacija";"419785";"1954_3";"groups in mountainous regions";"present";"Factual Statement by Author";"Rupture"
 "tadzhiki Nuratinskogo khrebta";"massovye pereselenija / forced resettlements 1940s-early 1950s";"43508";"1964_1";"gornye tadzhiki";"present";"Factual Statement by Author";NA
 "tadzhiki Nuratinskogo khrebta";"massovye pereselenija / forced resettlements 1940s-early 1950s";"43508";"1964_1";"gornye tadzhiki";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
-"tadzhiki Samarkanda i Bukhary";"nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x";"478446";"1989_1";"dolinnye tadzhiki";"past: early Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
+"prisyrdar'inskij rajon";"massovye pereselenija / forced resettlements 1940s-early 1950s";"43508";"1964_1";"Northern Tajikistan";"present";"Factual Statement by Author";NA
+"prisyrdar'inskij rajon";"massovye pereselenija / forced resettlements 1940s-early 1950s";"43508";"1964_1";"Northern Tajikistan";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
 "uzbeki";"nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x";"478446";"1989_1";"Central Asian titular nations";"past: early Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
+"tadzhiki Samarkanda i Bukhary (Uzbekistan)";"nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x";"478446";"1989_1";"Tajiks outside Tajikistan";"past: early Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "tadzhiki-matchincy";"massovye pereselenija / forced resettlements 1940s-early 1950s";"495546";"1964-6";"gornye tadzhiki";NA;"Citation Research, Secondary Literature, doklad, soobsshenie";NA
+"tjurkskie narody";"process urbanizacii / urbanizacija";"51063";"1983_6";"tjurki";"present";NA;NA
 "tadzhiki";"process urbanizacii / urbanizacija";"51063";"1983_6";"Groups";"present";NA;NA
-"tjurkskie narody";"process urbanizacii / urbanizacija";"51063";"1983_6";"Groups";"present";NA;NA
-"cities in contemporary Afghanistan";"process urbanizacii / urbanizacija";"53248";"1982_3";"Afghanistan";"present";"Factual Statement by Author";NA
 "cities in pre-Soviet Tajikistan";"process urbanizacii / urbanizacija";"53248";"1982_3";"Tajikistan / TadzhSSR";"present";"Factual Statement by Author";NA
-"gornye tadzhiki";"massovye pereselenija / forced resettlements 1940s-early 1950s";"54791";"1990_3";"tadzhiki";NA;"Factual Statement by Author";NA
-"gornye tadzhiki";"massovye pereselenija / forced resettlements 1960s - 1970s";"54791";"1990_3";"tadzhiki";NA;"Factual Statement by Author";NA
-"Ura-Tjube";"process urbanizacii / urbanizacija";"55722";"1982_3";"Ferghana / Ferganskaja dolina";"past: early Soviet";"Factual Statement by Author";NA
-"Ura-Tjube";"process urbanizacii / urbanizacija";"55722";"1982_3";"Ferghana / Ferganskaja dolina";"present";"Factual Statement by Author";NA
-"Isfara";"process urbanizacii / urbanizacija";"55722";"1982_3";"Ferghana / Ferganskaja dolina";"past: early Soviet";"Factual Statement by Author";NA
+"cities in contemporary Afghanistan";"process urbanizacii / urbanizacija";"53248";"1982_3";"Afghanistan";"present";"Factual Statement by Author";NA
+"tadzhiki Samarkanda i Bukhary (Uzbekistan)";"nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x";"54379";"1991_1";"Tajiks outside Tajikistan";NA;"Factual Statement by Author";NA
+"uzbeki";"nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x";"54379";"1991_1";"Central Asian titular nations";NA;"Factual Statement by Author";NA
+"gorodskoe naselenie Tadzh. / urban population of Tajikistan";"process urbanizacii / urbanizacija";"54538";"1982_3";"Groups";"present";NA;NA
+"gornye tadzhiki";"massovye pereselenija / forced resettlements 1940s-early 1950s";"54791";"1990_3";"groups in mountainous regions";NA;"Factual Statement by Author";NA
+"gornye tadzhiki";"massovye pereselenija / forced resettlements 1960s - 1970s";"54791";"1990_3";"groups in mountainous regions";NA;"Factual Statement by Author";NA
 "Isfara";"process urbanizacii / urbanizacija";"55722";"1982_3";"Ferghana / Ferganskaja dolina";"present";"Factual Statement by Author";NA
-"gornye tadzhiki";"massovye pereselenija / forced resettlements late 1920s-1930s";"571824";"1954_4";"tadzhiki";"past: Stalinist era / 1930s-40s";"Literature Review";"Continuity"
-"gornye tadzhiki";"massovye pereselenija / forced resettlements late 1920s-1930s";"571824";"1954_4";"tadzhiki";"past: pre-Soviet";"Literature Review";"Continuity"
-"gornye tadzhiki";"massovye pereselenija / forced resettlements 1940s-early 1950s";"571824";"1954_4";"tadzhiki";"past: Stalinist era / 1930s-40s";"Literature Review";"Continuity"
-"gornye tadzhiki";"massovye pereselenija / forced resettlements 1940s-early 1950s";"571824";"1954_4";"tadzhiki";"past: pre-Soviet";"Literature Review";"Continuity"
+"Isfara";"process urbanizacii / urbanizacija";"55722";"1982_3";"Ferghana / Ferganskaja dolina";"past: early Soviet";"Factual Statement by Author";NA
+"Ura-Tjube";"process urbanizacii / urbanizacija";"55722";"1982_3";"Ferghana / Ferganskaja dolina";"present";"Factual Statement by Author";NA
+"Ura-Tjube";"process urbanizacii / urbanizacija";"55722";"1982_3";"Ferghana / Ferganskaja dolina";"past: early Soviet";"Factual Statement by Author";NA
 "uzbeki iz gornykh rajonov";"massovye pereselenija / forced resettlements late 1920s-1930s";"571824";"1954_4";"uzbeki";"past: Stalinist era / 1930s-40s";"Literature Review";"Continuity"
 "uzbeki iz gornykh rajonov";"massovye pereselenija / forced resettlements late 1920s-1930s";"571824";"1954_4";"uzbeki";"past: pre-Soviet";"Literature Review";"Continuity"
 "uzbeki iz gornykh rajonov";"massovye pereselenija / forced resettlements 1940s-early 1950s";"571824";"1954_4";"uzbeki";"past: Stalinist era / 1930s-40s";"Literature Review";"Continuity"
 "uzbeki iz gornykh rajonov";"massovye pereselenija / forced resettlements 1940s-early 1950s";"571824";"1954_4";"uzbeki";"past: pre-Soviet";"Literature Review";"Continuity"
+"gornye tadzhiki";"massovye pereselenija / forced resettlements late 1920s-1930s";"571824";"1954_4";"groups in mountainous regions";"past: Stalinist era / 1930s-40s";"Literature Review";"Continuity"
+"gornye tadzhiki";"massovye pereselenija / forced resettlements late 1920s-1930s";"571824";"1954_4";"groups in mountainous regions";"past: pre-Soviet";"Literature Review";"Continuity"
+"gornye tadzhiki";"massovye pereselenija / forced resettlements 1940s-early 1950s";"571824";"1954_4";"groups in mountainous regions";"past: Stalinist era / 1930s-40s";"Literature Review";"Continuity"
+"gornye tadzhiki";"massovye pereselenija / forced resettlements 1940s-early 1950s";"571824";"1954_4";"groups in mountainous regions";"past: pre-Soviet";"Literature Review";"Continuity"
 "tadzhiki";"process nacional'noj konsolidacii tadzhikskogo naroda";"573111";"1954_4";"Groups";NA;"Literature Review";NA
 "tjurki";"process nacional'noj konsolidacii tadzhikskogo naroda";"573111";"1954_4";"Groups";NA;"Literature Review";NA
-"Isfara";"process urbanizacii / urbanizacija";"63448";"1982_3";"Ferghana / Ferganskaja dolina";"present";"Factual Statement by Author";NA
 "Ura-Tjube";"process urbanizacii / urbanizacija";"63448";"1982_3";"Ferghana / Ferganskaja dolina";"present";"Factual Statement by Author";NA
-"Isfara";"process urbanizacii / urbanizacija";"65727";"1982_3";"Ferghana / Ferganskaja dolina";"present";"Factual Statement by Author";NA
+"Isfara";"process urbanizacii / urbanizacija";"63448";"1982_3";"Ferghana / Ferganskaja dolina";"present";"Factual Statement by Author";NA
 "Ura-Tjube";"process urbanizacii / urbanizacija";"65727";"1982_3";"Ferghana / Ferganskaja dolina";"present";"Factual Statement by Author";NA
+"Isfara";"process urbanizacii / urbanizacija";"65727";"1982_3";"Ferghana / Ferganskaja dolina";"present";"Factual Statement by Author";NA
 "tadzhiki";"process nacional'noj konsolidacii tadzhikskogo naroda";"7721";"1964-6";"Groups";NA;"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "tadzhiki";"nacional'no-gosudarstvennye razmezhevanija v Srednej Azii 1920x";"7721";"1964-6";"Groups";NA;"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "tadzhiki-matchincy";"massovye pereselenija / forced resettlements 1940s-early 1950s";"89932";"1962_3";"gornye tadzhiki";"present";NA;NA
