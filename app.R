@@ -323,7 +323,8 @@ ui <- fluidPage(
                         "Yaghnob", 
                         "Northern Tajikistan", 
                         "Southern Tajikistan", 
-                        "Tajiks outside Tajikistan")
+                        "Tajiks outside Tajikistan",
+                        "women")
           )
         ),
         
@@ -347,8 +348,7 @@ ui <- fluidPage(
                         "Karategin",
                         "Kuljab",
                         "urban population",
-                        "rural population",
-                        "women")
+                        "rural population")
           )
         )
       ),
@@ -413,15 +413,16 @@ server <- function(input, output, session) {
                                        "material'naja kul'tura", "dukhovnaja kul'tura",
                                        "language / spoken","language / terminology", "prazdniki", "folklore",
                                        "intermarriages", "weddings", "child birth", "family life","death / funerals",
-                                       "medicine / healthcare", "identity / self-description", "external identification"),)
+                                       "medicine / healthcare"),)
       updateCheckboxGroupInput(session, "category_3",
                              selected=character(0),
                              choices=c("perezhitki", "religion", "beliefs / myths",
-                                       "physical features,  anthropometry,  anthroposcopy",'"racial type" / rasovyj tip / rasa', 
+                                       '"racial type" / rasovyj tip / rasa', #"physical features,  anthropometry,  anthroposcopy"
                                        "ethnogenesis", "etnos / ethnos", 
                                       "gender relations / polozhenie zhensshiny",
                                       "family structure", "social formation", "mode of production",
-                                      "obraz zhizni", "kolkhozes", "agriculture"),)
+                                      "obraz zhizni", "kolkhozes", "agriculture",
+                                      "identity / self-description", "external identification"),)
     } else if (input$category == "Attributes") {
       updateCheckboxGroupInput(session, "category_2",
                                selected=character(0),
