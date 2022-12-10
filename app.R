@@ -323,7 +323,7 @@ ui <- fluidPage(
                         "Yaghnob", 
                         "Northern Tajikistan", 
                         "Southern Tajikistan", 
-                        "Tajiks outside Tajikistan",
+                        "Tajiks outside the Tajik SSR",
                         "women")
           )
         ),
@@ -409,16 +409,18 @@ server <- function(input, output, session) {
     if(input$category == "Features") {
       updateCheckboxGroupInput(session, "category_2",
                              selected=character(0),
-                             choices=c("byt / bytovyj uklad", "housing", "clothing", "food / cooking", "kul'tura / kul'turnye tradicii",
+                             choices=c("byt / bytovyj uklad", "clothing", "food / cooking", "housing", "kul'tura / kul'turnye tradicii",
                                        "material'naja kul'tura", "dukhovnaja kul'tura",
                                        "language / spoken","language / terminology", "prazdniki", "folklore",
                                        "intermarriages", "weddings", "child birth", "family life","death / funerals",
-                                       "medicine / healthcare"),)
+                                       "medicine / healthcare" #, "antropologicheskij tip", "etnicheskie priznaki", "antropologicheskij sostav"
+                                       ),)
       updateCheckboxGroupInput(session, "category_3",
                              selected=character(0),
                              choices=c("perezhitki", "religion", "beliefs / myths",
                                        '"racial type" / rasovyj tip / rasa', #"physical features,  anthropometry,  anthroposcopy"
                                        "ethnogenesis", "etnos / ethnos", 
+                                       #"genetic features", "anthroposcopic measures", "craniological features", "physical features",
                                       "gender relations / polozhenie zhensshiny",
                                       "family structure", "social formation", "mode of production",
                                       "obraz zhizni", "kolkhozes", "agriculture",
