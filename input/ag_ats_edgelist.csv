@@ -78,9 +78,9 @@
 "Kuljabskaja oblast' / Kuljab";"archaic / arkhaichno";"117825";"1955_3";"Southern Tajikistan";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";"Rupture"
 "Garm / Garmskaja oblast'";"archaic / arkhaichno";"117825";"1955_3";"gornye oblasti Tadzh. / mountainous regions of Tajikistan";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";"Rupture"
 "Tajikistan / TadzhSSR";"archaic / arkhaichno";"117825";"1955_3";"Locations";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";"Rupture"
-"tadzhiki v severnom Afganistane";"threatened / attacked / in need of protection";"118925";"1955_2";"Tajiks outside Tajikistan";"past: pre-Russian Empire / pre-Russian colonialism";NA;"Continuity"
-"tadzhiki v severnom Afganistane";"threatened / attacked / in need of protection";"118925";"1955_2";"Tajiks outside Tajikistan";"past: pre-Soviet";NA;"Continuity"
-"tadzhiki v severnom Afganistane";"threatened / attacked / in need of protection";"118925";"1955_2";"Tajiks outside Tajikistan";"past: early Soviet";NA;"Continuity"
+"tadzhiki v severnom Afganistane";"threatened / attacked / in need of protection";"118925";"1955_2";"Tajiks outside the Tajik SSR";"past: pre-Russian Empire / pre-Russian colonialism";NA;"Continuity"
+"tadzhiki v severnom Afganistane";"threatened / attacked / in need of protection";"118925";"1955_2";"Tajiks outside the Tajik SSR";"past: pre-Soviet";NA;"Continuity"
+"tadzhiki v severnom Afganistane";"threatened / attacked / in need of protection";"118925";"1955_2";"Tajiks outside the Tajik SSR";"past: early Soviet";NA;"Continuity"
 "tadzhiki";"atheist / non-spiritual / materialist";"123978";"1989_5";"Groups";"present";"Factual Statement by Author";"Continuity"
 "pripamirskie narodnosti / narody / pripamircy";"atheist / non-spiritual / materialist";"123978";"1989_5";"Pamir groups";"present";"Factual Statement by Author";"Continuity"
 "polukochevye uzbeki";"traditional / narodnyj / nacional'nyj";"124201";"1971_4";"uzbeki";NA;"Factual Statement by Author";NA
@@ -152,7 +152,7 @@
 "Tajik women / tadzhichki";"modern / sovremennyj";"20325";"1962_6";"tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
 "Tajik women / tadzhichki";"urban";"20325";"1962_6";"tadzhiki";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
 "Tajik women / tadzhichki";"urban";"20325";"1962_6";"tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki Nuratinskogo khrebta";"threatened / attacked / in need of protection";"20740";"1964_1";"gornye tadzhiki";"past: pre-Russian Empire / pre-Russian colonialism";"Factual Statement by Author";NA
+"tadzhiki Nuratinskogo khrebta";"threatened / attacked / in need of protection";"20740";"1964_1";"groups in mountainous regions";"past: pre-Russian Empire / pre-Russian colonialism";"Factual Statement by Author";NA
 "Eastern Pamirs / Vostochnyj Pamir";"inhospitable / adverse conditions";"207430";"1959_4";"Pamir";NA;"Factual Statement by Author";NA
 "Eastern Pamirs / Vostochnyj Pamir";"isolated / otdalennyj / trudnodostupnyj";"207430";"1959_4";"Pamir";NA;"Factual Statement by Author";NA
 "Leninabadskij rajon / oblast' / kraj";"progressive / peredovyj / novyj / efficient";"207461";"1955_4";"Northern Tajikistan";"present";NA;NA
@@ -170,8 +170,8 @@
 "tadzhiki";"suppressed / ugnetennyj / exploited / exploitative";"2174";"1964-6";"Groups";"past: pre-Soviet";"Factual Statement by Author";NA
 "Leninabadskij rajon / oblast' / kraj";"collectivist";"223524";"1955_4";"Northern Tajikistan";"past: pre-Soviet";"Factual Statement by Author";NA
 "Tajikistan / TadzhSSR";"developed / razvito";"22484";"1964-6";"Locations";"present";"Factual Statement by Author";NA
-"persy / iranojazychnye narody / Persian-/Iranian-speaking group";"traditional / narodnyj / nacional'nyj";"225450";"1957_2";"Groups in Iran";"past: pre-Islamic / pre-Arab conquest";"Factual Statement by Author";"Continuity"
-"persy / iranojazychnye narody / Persian-/Iranian-speaking group";"traditional / narodnyj / nacional'nyj";"225450";"1957_2";"Groups in Iran";"present";"Factual Statement by Author";"Continuity"
+"persy / iranojazychnye narody / Persian/Iranian-speaking groups";"traditional / narodnyj / nacional'nyj";"225450";"1957_2";"Groups in Iran";"past: pre-Islamic / pre-Arab conquest";"Factual Statement by Author";"Continuity"
+"persy / iranojazychnye narody / Persian/Iranian-speaking groups";"traditional / narodnyj / nacional'nyj";"225450";"1957_2";"Groups in Iran";"present";"Factual Statement by Author";"Continuity"
 "gornye tadzhiki";"traditional / narodnyj / nacional'nyj";"225450";"1957_2";"groups in mountainous regions";"past: pre-Islamic / pre-Arab conquest";"Factual Statement by Author";"Continuity"
 "gornye tadzhiki";"traditional / narodnyj / nacional'nyj";"225450";"1957_2";"groups in mountainous regions";"present";"Factual Statement by Author";"Continuity"
 "gornye tadzhiki bassejna r. Khingou";"traditional / narodnyj / nacional'nyj";"225450";"1957_2";"gornye tadzhiki";"past: pre-Islamic / pre-Arab conquest";"Factual Statement by Author";"Continuity"
@@ -200,10 +200,10 @@
 "Leninabadskij rajon / oblast' / kraj";"collectivist";"236847";"1955_4";"Northern Tajikistan";"past: early Soviet";NA;NA
 "Leninabadskij rajon / oblast' / kraj";"malodokhodno / inefficient / un-economical";"236847";"1955_4";"Northern Tajikistan";"past: early Soviet";NA;NA
 "Leninabadskij rajon / oblast' / kraj";"egalitarian / liberated";"236847";"1955_4";"Northern Tajikistan";"past: early Soviet";NA;NA
-"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"modern / sovremennyj";"238816";"1989_4";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
-"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"democratic";"238816";"1989_4";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
-"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"traditional / narodnyj / nacional'nyj";"238816";"1989_4";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
-"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"mixed / coexisting";"238816";"1989_4";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
+"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"modern / sovremennyj";"238816";"1989_4";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
+"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"democratic";"238816";"1989_4";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
+"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"traditional / narodnyj / nacional'nyj";"238816";"1989_4";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
+"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"mixed / coexisting";"238816";"1989_4";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
 "uzbeki";"modern / sovremennyj";"238816";"1989_4";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "uzbeki";"democratic";"238816";"1989_4";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "uzbeki";"traditional / narodnyj / nacional'nyj";"238816";"1989_4";"Central Asian titular nations";"present";"Factual Statement by Author";NA
@@ -212,8 +212,8 @@
 "russkij narod / Russians";"modern / sovremennyj";"2392";"1964-6";"Groups";"past: early Soviet";"Factual Statement by Author";NA
 "srednee i nizhnee techenie r. Khingou";"Muslim";"239503";"1957_2";"pritoki r. Vakhsh";NA;"Factual Statement by Author";NA
 "tadzhiki";"avtokhtonno / autochthonous";"246879";"1981_6";"Groups";NA;NA;NA
-"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"Muslim";"246909";"1989_4";"Tajiks outside Tajikistan";NA;NA;NA
-"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"religious";"246909";"1989_4";"Tajiks outside Tajikistan";NA;NA;NA
+"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"Muslim";"246909";"1989_4";"Tajiks outside the Tajik SSR";NA;NA;NA
+"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"religious";"246909";"1989_4";"Tajiks outside the Tajik SSR";NA;NA;NA
 "uzbeki";"Muslim";"246909";"1989_4";"Central Asian titular nations";NA;NA;NA
 "uzbeki";"religious";"246909";"1989_4";"Central Asian titular nations";NA;NA;NA
 "musul'manskie narody Kavkaza";"superstitious";"248827";"1980_6";"narody Kavkaza";"past";"Factual Statement by Author";NA
@@ -241,7 +241,7 @@
 "tjurki";"Muslim";"262394";"1990_4";"Groups";NA;NA;NA
 "pamircy (Afghanistan)";"isolated / otdalennyj / trudnodostupnyj";"263590";"1956_2";"Groups in Afghanistan";"present";"Factual Statement by Author";NA
 "vakhancy";"isolated / otdalennyj / trudnodostupnyj";"263590";"1956_2";"Pamir groups";"present";"Factual Statement by Author";NA
-"Sin'czjanskie tadzhiki / tadzhiki v Kitae";"isolated / otdalennyj / trudnodostupnyj";"263590";"1956_2";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
+"Sin'czjanskie tadzhiki / tadzhiki v Kitae";"isolated / otdalennyj / trudnodostupnyj";"263590";"1956_2";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
 "sarykol'cy";"isolated / otdalennyj / trudnodostupnyj";"263590";"1956_2";"Pamir groups";"present";"Factual Statement by Author";NA
 "shugnancy";"isolated / otdalennyj / trudnodostupnyj";"263590";"1956_2";"Pamir groups";"present";"Factual Statement by Author";NA
 "roshancy";"isolated / otdalennyj / trudnodostupnyj";"263590";"1956_2";"Pamir groups";"present";"Factual Statement by Author";NA
@@ -279,7 +279,7 @@
 "Ishkashim / Ishkashimskij rajon";"flawed / in need of improvement";"285846";"1971_1";"Gorno-Badakhshan / Sovetskij Badakhshan / GBAO";"past: pre-Soviet";"Factual Statement by Author";NA
 "Ishkashim / Ishkashimskij rajon";"otstalyj / backward";"285846";"1971_1";"Gorno-Badakhshan / Sovetskij Badakhshan / GBAO";"past: pre-Soviet";"Factual Statement by Author";NA
 "Ishkashim / Ishkashimskij rajon";"changing / in a process of change";"286246";"1971_1";"Gorno-Badakhshan / Sovetskij Badakhshan / GBAO";"present";"Factual Statement by Author";"Rupture"
-"tadzhiki Nuratinskogo khrebta";"resistent / resisting";"29295";"1964_1";"gornye tadzhiki";"past: pre-Russian Empire / pre-Russian colonialism";"Factual Statement by Author";NA
+"tadzhiki Nuratinskogo khrebta";"resistent / resisting";"29295";"1964_1";"groups in mountainous regions";"past: pre-Russian Empire / pre-Russian colonialism";"Factual Statement by Author";NA
 "kazakhi";"unique / locally specific / svoeobraznyj / samobytnyj";"29354";"1962_6";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "kazakhi";"traditional / narodnyj / nacional'nyj";"29354";"1962_6";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "kazakhi";"changing / in a process of change";"29354";"1962_6";"Central Asian titular nations";"present";"Factual Statement by Author";NA
@@ -347,17 +347,17 @@
 "Uzbekistan / Uzbekskaja SSR";"growing (population: mnogodetnost')";"33331";"1989_2";"Locations";"present";"Factual Statement by Author";NA
 "tadzhiki";"traditional / narodnyj / nacional'nyj";"337282";"1975_5";"Groups";NA;"Factual Statement by Author";NA
 "tadzhiki";"unique / locally specific / svoeobraznyj / samobytnyj";"337282";"1975_5";"Groups";NA;"Factual Statement by Author";NA
-"tadzhiki";"changing / in a process of change";"341143";"1975_5";"Groups";"present";"Factual Statement by Author";"Rupture"
 "tadzhiki";"changing / in a process of change";"341143";"1975_5";"Groups";"future";"Factual Statement by Author";"Rupture"
+"tadzhiki";"changing / in a process of change";"341143";"1975_5";"Groups";"present";"Factual Statement by Author";"Rupture"
 "glukhie rajony Kirgizii";"patriarchal";"342618";"1967_5";"Kirgizija / Kirgizskaja SSR";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "glukhie rajony Kirgizii";"isolated / otdalennyj / trudnodostupnyj";"342618";"1967_5";"Kirgizija / Kirgizskaja SSR";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "glukhie rajony Kirgizii";"undemocratic / hierarchical / despotic";"342618";"1967_5";"Kirgizija / Kirgizskaja SSR";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "glukhie rajony Tadzhikistana";"patriarchal";"342618";"1967_5";"Tajikistan / TadzhSSR";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "glukhie rajony Tadzhikistana";"isolated / otdalennyj / trudnodostupnyj";"342618";"1967_5";"Tajikistan / TadzhSSR";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "glukhie rajony Tadzhikistana";"undemocratic / hierarchical / despotic";"342618";"1967_5";"Tajikistan / TadzhSSR";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
-"Karashinskaja step'";"patriarchal";"342618";"1967_5";"Locations";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
-"Karashinskaja step'";"isolated / otdalennyj / trudnodostupnyj";"342618";"1967_5";"Locations";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
-"Karashinskaja step'";"undemocratic / hierarchical / despotic";"342618";"1967_5";"Locations";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
+"Karshinskaja step'";"patriarchal";"342618";"1967_5";"Uzbekistan / Uzbekskaja SSR";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
+"Karshinskaja step'";"isolated / otdalennyj / trudnodostupnyj";"342618";"1967_5";"Uzbekistan / Uzbekskaja SSR";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
+"Karshinskaja step'";"undemocratic / hierarchical / despotic";"342618";"1967_5";"Uzbekistan / Uzbekskaja SSR";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "Khorezmskij oazis";"patriarchal";"342618";"1967_5";"Locations";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "Khorezmskij oazis";"isolated / otdalennyj / trudnodostupnyj";"342618";"1967_5";"Locations";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "Khorezmskij oazis";"undemocratic / hierarchical / despotic";"342618";"1967_5";"Locations";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
@@ -438,7 +438,7 @@
 "tadzhiki";"unequal";"367894";"1985_6";"Groups";"past: pre-Soviet";"Factual Statement by Author";NA
 "tadzhiki";"religious";"367894";"1985_6";"Groups";"past: pre-Soviet";"Factual Statement by Author";NA
 "uzbeki Surkhandar'inskoj oblasti";"developed / razvito";"368841";"1970_2";"uzbeki";"past: pre-Soviet";"Factual Statement by Author";NA
-"tadzhiki Surkhandar'inskoj oblasti (Uzbekistan)";"developed / razvito";"368841";"1970_2";"Tajiks outside Tajikistan";"past: pre-Soviet";"Factual Statement by Author";NA
+"tadzhiki Surkhandar'inskoj oblasti (Uzbekistan)";"developed / razvito";"368841";"1970_2";"Tajiks outside the Tajik SSR";"past: pre-Soviet";"Factual Statement by Author";NA
 "tadzhiki";"ustoichivo / stable";"369983";"1971_6";"Groups";"present";"Factual Statement by Author";"Continuity"
 "juzhnye tadzhiki / Southern Tajikistan Tajiks";"unique / locally specific / svoeobraznyj / samobytnyj";"377046";"1983_3";"tadzhiki";NA;"Factual Statement by Author";NA
 "kazakhi";"changing / in a process of change";"37827";"1977_6";"Central Asian titular nations";"present";NA;NA
@@ -501,8 +501,8 @@
 "Historical Southern Tajikistan (Baktria / Tokharistan)";"changing / in a process of change";"407903";"1969_3";"Historical locations";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";"Rupture"
 "tadzhiki";"modern / sovremennyj";"408022";"1964-6";"Groups";"present";NA;NA
 "Tajikistan / TadzhSSR";"kul'turno / cultured";"411307";"1964-6";"Locations";"present";NA;NA
-"tadzhiki doliny Jakh-su";"inhospitable / adverse conditions";"417025";"1954_3";"gornye tadzhiki";"past: pre-Russian Empire / pre-Russian colonialism";"Citation Research, Secondary Literature, doklad, soobsshenie";"Continuity"
-"tadzhiki Vakhio";"inhospitable / adverse conditions";"417025";"1954_3";"gornye tadzhiki";"past: pre-Russian Empire / pre-Russian colonialism";"Citation Research, Secondary Literature, doklad, soobsshenie";"Continuity"
+"tadzhiki doliny Jakh-su";"inhospitable / adverse conditions";"417025";"1954_3";"groups in mountainous regions";"past: pre-Russian Empire / pre-Russian colonialism";"Citation Research, Secondary Literature, doklad, soobsshenie";"Continuity"
+"tadzhiki Vakhio";"inhospitable / adverse conditions";"417025";"1954_3";"groups in mountainous regions";"past: pre-Russian Empire / pre-Russian colonialism";"Citation Research, Secondary Literature, doklad, soobsshenie";"Continuity"
 "vostochnaja chast' Bukharskogo khanstva";"feudal";"419213";"1954_3";"Vostochnaja Bukhara / Bukharskoe khanstvo / Bukharskij emirat";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";"Rupture"
 "vostochnaja chast' Bukharskogo khanstva";"suppressed / ugnetennyj / exploited / exploitative";"419213";"1954_3";"Vostochnaja Bukhara / Bukharskoe khanstvo / Bukharskij emirat";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";"Rupture"
 "Karategin";"feudal";"419213";"1954_3";"gornyj juzhnyj Tadzh. / mountainous regions Southern Tajikistan";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";"Rupture"
@@ -530,12 +530,12 @@
 "kochevoe naselenie Tadzhikistana";"developed / razvito";"420637";"1958_6";"Groups";"past";"Correction of cited research or literature";NA
 "kochevoe naselenie Tadzhikistana";"kul'turno / cultured";"420637";"1958_6";"Groups";"past";"Literature Review";NA
 "kochevoe naselenie Tadzhikistana";"kul'turno / cultured";"420637";"1958_6";"Groups";"past";"Correction of cited research or literature";NA
-"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"422071";"1984_3";"gornye tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"422071";"1984_3";"gornye tadzhiki";"present";"Factual Statement by Author";NA
-"tadzhiki verkhov'ev Zeravshana";"superstitious";"422071";"1984_3";"gornye tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki verkhov'ev Zeravshana";"superstitious";"422071";"1984_3";"gornye tadzhiki";"present";"Factual Statement by Author";NA
-"tadzhiki verkhov'ev Zeravshana";"changing / in a process of change";"422071";"1984_3";"gornye tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki verkhov'ev Zeravshana";"changing / in a process of change";"422071";"1984_3";"gornye tadzhiki";"present";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"422071";"1984_3";"groups in mountainous regions";"present";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"422071";"1984_3";"groups in mountainous regions";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"superstitious";"422071";"1984_3";"groups in mountainous regions";"present";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"superstitious";"422071";"1984_3";"groups in mountainous regions";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"changing / in a process of change";"422071";"1984_3";"groups in mountainous regions";"present";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"changing / in a process of change";"422071";"1984_3";"groups in mountainous regions";"past: early Soviet";"Factual Statement by Author";NA
 "Gissar";"primitive / primitivno";"422724";"1957_1";"Tajikistan / TadzhSSR";"past: pre-Soviet";NA;NA
 "Gissar";"poor / impoverished";"422724";"1957_1";"Tajikistan / TadzhSSR";"past: pre-Soviet";NA;NA
 "Gissar";"unique / locally specific / svoeobraznyj / samobytnyj";"422724";"1957_1";"Tajikistan / TadzhSSR";"past: pre-Soviet";NA;NA
@@ -555,8 +555,8 @@
 "karakalpaki";"regressive / reactionary";"43187";"1962_6";"Groups";"present";"Factual Statement by Author";NA
 "turkmeny";"flawed / in need of improvement";"43187";"1962_6";"Central Asian titular nations";"present";"Factual Statement by Author";NA
 "turkmeny";"regressive / reactionary";"43187";"1962_6";"Central Asian titular nations";"present";"Factual Statement by Author";NA
-"tadzhiki-matchincy v Dal'verzinskoj stepi";"flawed / in need of improvement";"43187";"1962_6";"gornye tadzhiki";"present";"Factual Statement by Author";NA
-"tadzhiki-matchincy v Dal'verzinskoj stepi";"regressive / reactionary";"43187";"1962_6";"gornye tadzhiki";"present";"Factual Statement by Author";NA
+"tadzhiki-matchincy v Dal'verzinskoj stepi";"flawed / in need of improvement";"43187";"1962_6";"groups in mountainous regions";"present";"Factual Statement by Author";NA
+"tadzhiki-matchincy v Dal'verzinskoj stepi";"regressive / reactionary";"43187";"1962_6";"groups in mountainous regions";"present";"Factual Statement by Author";NA
 "gornye tadzhiki";"suppressed / ugnetennyj / exploited / exploitative";"431938";"1959_6";"groups in mountainous regions";"past: pre-Soviet";"Literature Review";NA
 "gornye tadzhiki";"suppressed / ugnetennyj / exploited / exploitative";"431938";"1959_6";"groups in mountainous regions";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "gornye tadzhiki";"unequal";"431938";"1959_6";"groups in mountainous regions";"past: pre-Soviet";"Literature Review";NA
@@ -565,16 +565,16 @@
 "gornye tadzhiki";"patriarchal";"431938";"1959_6";"groups in mountainous regions";"past: pre-Soviet";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "tadzhiki";"patriarchal";"43355";"1982_3";"Groups";"past: pre-Soviet";"Factual Statement by Author";NA
 "tadzhiki";"feudal";"43355";"1982_3";"Groups";"past: pre-Soviet";"Factual Statement by Author";NA
-"tadzhiki Nuratinskogo khrebta";"inhospitable / adverse conditions";"43373";"1964_1";"gornye tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki Nuratinskogo khrebta";"underdeveloped (economy)";"43373";"1964_1";"gornye tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki Nuratinskogo khrebta";"inhospitable / adverse conditions";"43373";"1964_1";"groups in mountainous regions";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki Nuratinskogo khrebta";"underdeveloped (economy)";"43373";"1964_1";"groups in mountainous regions";"past: early Soviet";"Factual Statement by Author";NA
 "prisyrdar'inskij rajon";"developed / razvito";"43508";"1964_1";"Northern Tajikistan";"present";"Factual Statement by Author";NA
 "prisyrdar'inskij rajon";"developed / razvito";"43508";"1964_1";"Northern Tajikistan";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
 "prisyrdar'inskij rajon";"traditional / narodnyj / nacional'nyj";"43508";"1964_1";"Northern Tajikistan";"present";"Factual Statement by Author";NA
 "prisyrdar'inskij rajon";"traditional / narodnyj / nacional'nyj";"43508";"1964_1";"Northern Tajikistan";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
-"tadzhiki Nuratinskogo khrebta";"developed / razvito";"43508";"1964_1";"gornye tadzhiki";"present";"Factual Statement by Author";NA
-"tadzhiki Nuratinskogo khrebta";"developed / razvito";"43508";"1964_1";"gornye tadzhiki";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
-"tadzhiki Nuratinskogo khrebta";"traditional / narodnyj / nacional'nyj";"43508";"1964_1";"gornye tadzhiki";"present";"Factual Statement by Author";NA
-"tadzhiki Nuratinskogo khrebta";"traditional / narodnyj / nacional'nyj";"43508";"1964_1";"gornye tadzhiki";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
+"tadzhiki Nuratinskogo khrebta";"developed / razvito";"43508";"1964_1";"groups in mountainous regions";"present";"Factual Statement by Author";NA
+"tadzhiki Nuratinskogo khrebta";"developed / razvito";"43508";"1964_1";"groups in mountainous regions";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
+"tadzhiki Nuratinskogo khrebta";"traditional / narodnyj / nacional'nyj";"43508";"1964_1";"groups in mountainous regions";"present";"Factual Statement by Author";NA
+"tadzhiki Nuratinskogo khrebta";"traditional / narodnyj / nacional'nyj";"43508";"1964_1";"groups in mountainous regions";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
 "verkhovja Zeravshana / Verkhnij Zeravshan / gornyj Zeravshan";"changing / in a process of change";"436833";"1984_3";"Zeravshan";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";"Rupture"
 "verkhovja Zeravshana / Verkhnij Zeravshan / gornyj Zeravshan";"atheist / non-spiritual / materialist";"436833";"1984_3";"Zeravshan";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";"Rupture"
 "verkhovja Zeravshana / Verkhnij Zeravshan / gornyj Zeravshan";"loyal / trustworthy";"436833";"1984_3";"Zeravshan";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";"Rupture"
@@ -637,23 +637,23 @@
 "gorcy-tadzhiki / tadzhiki-gorcy";"traditional / narodnyj / nacional'nyj";"448096";"1955_4";"gornye tadzhiki";"present";"Factual Statement by Author";NA
 "gorcy-tadzhiki / tadzhiki-gorcy";"archaic / arkhaichno";"448096";"1955_4";"gornye tadzhiki";"present";"Factual Statement by Author";NA
 "gorcy-tadzhiki / tadzhiki-gorcy";"mixed / coexisting";"448096";"1955_4";"gornye tadzhiki";"present";"Factual Statement by Author";NA
-"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"449109";"1984_3";"gornye tadzhiki";"present";"Factual Statement by Author";NA
-"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"449109";"1984_3";"gornye tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"449712";"1984_3";"gornye tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"449712";"1984_3";"gornye tadzhiki";"present";"Factual Statement by Author";NA
-"tadzhiki verkhov'ev Zeravshana";"traditional / narodnyj / nacional'nyj";"449927";"1984_3";"gornye tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki verkhov'ev Zeravshana";"traditional / narodnyj / nacional'nyj";"449927";"1984_3";"gornye tadzhiki";"present";"Factual Statement by Author";NA
-"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"449927";"1984_3";"gornye tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"449927";"1984_3";"gornye tadzhiki";"present";"Factual Statement by Author";NA
-"tadzhiki Darvaza";"unique / locally specific / svoeobraznyj / samobytnyj";"450999";"1955_4";"gornye tadzhiki";"present";"Factual Statement by Author";"Continuity"
-"tadzhiki Darvaza";"primitive / primitivno";"450999";"1955_4";"gornye tadzhiki";"present";"Factual Statement by Author";"Continuity"
+"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"449109";"1984_3";"groups in mountainous regions";"present";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"449109";"1984_3";"groups in mountainous regions";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"449712";"1984_3";"groups in mountainous regions";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"449712";"1984_3";"groups in mountainous regions";"present";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"traditional / narodnyj / nacional'nyj";"449927";"1984_3";"groups in mountainous regions";"present";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"traditional / narodnyj / nacional'nyj";"449927";"1984_3";"groups in mountainous regions";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"449927";"1984_3";"groups in mountainous regions";"present";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"atheist / non-spiritual / materialist";"449927";"1984_3";"groups in mountainous regions";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki Darvaza";"unique / locally specific / svoeobraznyj / samobytnyj";"450999";"1955_4";"groups in mountainous regions";"present";"Factual Statement by Author";"Continuity"
+"tadzhiki Darvaza";"primitive / primitivno";"450999";"1955_4";"groups in mountainous regions";"present";"Factual Statement by Author";"Continuity"
 "Darvaz";"developed / razvito";"453453";"1955_4";"gornyj juzhnyj Tadzh. / mountainous regions Southern Tajikistan";"present";"Factual Statement by Author";NA
 "Darvaz";"successful / uspeshno";"453642";"1955_4";"gornyj juzhnyj Tadzh. / mountainous regions Southern Tajikistan";"present";"Factual Statement by Author";NA
 "Darvaz";"growing (economy,  production)";"453642";"1955_4";"gornyj juzhnyj Tadzh. / mountainous regions Southern Tajikistan";"present";"Factual Statement by Author";NA
 "Darvaz";"changing / in a process of change";"453642";"1955_4";"gornyj juzhnyj Tadzh. / mountainous regions Southern Tajikistan";"present";"Factual Statement by Author";NA
 "Darvaz";"developed / razvito";"453642";"1955_4";"gornyj juzhnyj Tadzh. / mountainous regions Southern Tajikistan";"present";"Factual Statement by Author";NA
 "Historical Northern Tajikistan (Sogd + Ferghana)";"traditional / narodnyj / nacional'nyj";"456000";"1984_6";"Historical locations";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
-"tadzhiki verkhov'ev Chirchika (Uzbekistan)";"traditional / narodnyj / nacional'nyj";"456000";"1984_6";"Tajiks outside Tajikistan";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
+"tadzhiki verkhov'ev Chirchika (Uzbekistan)";"traditional / narodnyj / nacional'nyj";"456000";"1984_6";"Tajiks outside the Tajik SSR";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "narody Srednej Azii";"developed / razvito";"460662";"1957_2";"narody Srednej Azii i Kazakhstana";NA;"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "narody Srednej Azii";"unique / locally specific / svoeobraznyj / samobytnyj";"460662";"1957_2";"narody Srednej Azii i Kazakhstana";NA;"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "Darvaz";"inhospitable / adverse conditions";"461556";"1955_4";"gornyj juzhnyj Tadzh. / mountainous regions Southern Tajikistan";"past: pre-Soviet";"Factual Statement by Author";NA
@@ -662,7 +662,7 @@
 "Darvaz";"flawed / in need of improvement";"461888";"1955_4";"gornyj juzhnyj Tadzh. / mountainous regions Southern Tajikistan";"past: early Soviet";"Factual Statement by Author";NA
 "darvazcy";"changing / in a process of change";"462625";"1955_4";"tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
 "Sogd";"traditional / narodnyj / nacional'nyj";"46279";"1964_1";"Historical Northern Tajikistan (Sogd + Ferghana)";"present";"Factual Statement by Author";NA
-"tadzhiki Nuratinskogo khrebta";"traditional / narodnyj / nacional'nyj";"46279";"1964_1";"gornye tadzhiki";"present";"Factual Statement by Author";NA
+"tadzhiki Nuratinskogo khrebta";"traditional / narodnyj / nacional'nyj";"46279";"1964_1";"groups in mountainous regions";"present";"Factual Statement by Author";NA
 "darvazcy";"flawed / in need of improvement";"463264";"1955_4";"tadzhiki";"present";"Factual Statement by Author";NA
 "darvazcy";"superstitious";"463264";"1955_4";"tadzhiki";"present";"Factual Statement by Author";NA
 "narody Srednej Azii";"resistent / resisting";"464008";"1957_2";"narody Srednej Azii i Kazakhstana";NA;"Citation Research, Secondary Literature, doklad, soobsshenie";NA
@@ -674,9 +674,9 @@
 "Soviet Union";"changing / in a process of change";"46897";"1982_3";"Locations";"past: early Soviet";"Factual Statement by Author";NA
 "Soviet Union";"egalitarian / liberated";"46897";"1982_3";"Locations";"past: early Soviet";"Factual Statement by Author";NA
 "Soviet Union";"modern / sovremennyj";"46897";"1982_3";"Locations";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki Nuratinskogo khrebta";"developed / razvito";"46967";"1964_1";"gornye tadzhiki";"past: pre-Soviet";"Factual Statement by Author";NA
-"tadzhiki Nuratinskogo khrebta";"zazhitochno / wealthy / prosperous";"46967";"1964_1";"gornye tadzhiki";"past: pre-Soviet";"Factual Statement by Author";NA
-"tadzhiki Nuratinskogo khrebta";"urban";"46967";"1964_1";"gornye tadzhiki";"past: pre-Soviet";"Factual Statement by Author";NA
+"tadzhiki Nuratinskogo khrebta";"developed / razvito";"46967";"1964_1";"groups in mountainous regions";"past: pre-Soviet";"Factual Statement by Author";NA
+"tadzhiki Nuratinskogo khrebta";"zazhitochno / wealthy / prosperous";"46967";"1964_1";"groups in mountainous regions";"past: pre-Soviet";"Factual Statement by Author";NA
+"tadzhiki Nuratinskogo khrebta";"urban";"46967";"1964_1";"groups in mountainous regions";"past: pre-Soviet";"Factual Statement by Author";NA
 "kirgizy";"collectivist";"471786";"1990_6";"Central Asian titular nations";"past";"Factual Statement by Author";NA
 "kirgizy";"Muslim";"471786";"1990_6";"Central Asian titular nations";"past";"Factual Statement by Author";NA
 "uzbeki";"collectivist";"471786";"1990_6";"Central Asian titular nations";"past";"Factual Statement by Author";NA
@@ -720,7 +720,7 @@
 "sel'skoe naselenie gornykh rajonov Tadzhikistana";"religious";"492871";"1957_2";"sel'skoe naselenie Tadzh. / rural population of Tajikistan";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";"Continuity"
 "sel'skoe naselenie gornykh rajonov Tadzhikistana";"uneducated";"492871";"1957_2";"sel'skoe naselenie Tadzh. / rural population of Tajikistan";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";"Continuity"
 "sel'skoe naselenie gornykh rajonov Tadzhikistana";"vredno / harmful";"492871";"1957_2";"sel'skoe naselenie Tadzh. / rural population of Tajikistan";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";"Continuity"
-"tadzhiki-matchincy";"changing / in a process of change";"495546";"1964-6";"gornye tadzhiki";NA;"Citation Research, Secondary Literature, doklad, soobsshenie";NA
+"tadzhiki-matchincy";"changing / in a process of change";"495546";"1964-6";"groups in mountainous regions";NA;"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "tadzhiki srednej chasti doliny Zeravshana";"zoroastrijskij / Zoroastrian";"496053";"1973_1";"tadzhiki";"past: pre-Islamic / pre-Arab conquest";"Factual Statement by Author";NA
 "iranskie narody / Iranian peoples";"zoroastrijskij / Zoroastrian";"496053";"1973_1";"Groups in Iran";"past: pre-Islamic / pre-Arab conquest";"Factual Statement by Author";NA
 "Ura-Tjube";"peaceful";"49854";"1982_3";"Ferghana / Ferganskaja dolina";"past: pre-Soviet";"Factual Statement by Author";NA
@@ -749,7 +749,7 @@
 "gorodskoe naselenie Tadzh. / urban population of Tajikistan";"educated";"504478";"1957_2";"Groups";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "gorodskoe naselenie Tadzh. / urban population of Tajikistan";"superstitious";"504478";"1957_2";"Groups";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "gorodskoe naselenie Tadzh. / urban population of Tajikistan";"religious";"504478";"1957_2";"Groups";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
-"tadzhiki Samarkanda (Uzbekistan)";"superstitious";"506397";"1973_1";"Tajiks outside Tajikistan";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki Samarkanda (Uzbekistan)";"superstitious";"506397";"1973_1";"Tajiks outside the Tajik SSR";"past: early Soviet";"Factual Statement by Author";NA
 "uzbeki";"collectivist";"51463";"1960_2";"Central Asian titular nations";NA;"Factual Statement by Author";NA
 "uzbeki";"hard-working";"51463";"1960_2";"Central Asian titular nations";NA;"Factual Statement by Author";NA
 "tadzhiki";"collectivist";"51463";"1960_2";"Groups";NA;"Factual Statement by Author";NA
@@ -780,10 +780,10 @@
 "Golodnaja step'";"innovative";"522873";"1955_3";"Ferghana / Ferganskaja dolina";"present";"Correction of cited research or literature";"Rupture"
 "Golodnaja step'";"successful / uspeshno";"522873";"1955_3";"Ferghana / Ferganskaja dolina";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";"Rupture"
 "Golodnaja step'";"successful / uspeshno";"522873";"1955_3";"Ferghana / Ferganskaja dolina";"present";"Correction of cited research or literature";"Rupture"
-"tadzhiki Bukhary (Uzbekistan)";"resistent / resisting";"53066";"1991_1";"Tajiks outside Tajikistan";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
-"tadzhiki Bukhary (Uzbekistan)";"resistent / resisting";"53066";"1991_1";"Tajiks outside Tajikistan";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki Samarkanda (Uzbekistan)";"resistent / resisting";"53066";"1991_1";"Tajiks outside Tajikistan";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
-"tadzhiki Samarkanda (Uzbekistan)";"resistent / resisting";"53066";"1991_1";"Tajiks outside Tajikistan";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki Bukhary (Uzbekistan)";"resistent / resisting";"53066";"1991_1";"Tajiks outside the Tajik SSR";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
+"tadzhiki Bukhary (Uzbekistan)";"resistent / resisting";"53066";"1991_1";"Tajiks outside the Tajik SSR";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki Samarkanda (Uzbekistan)";"resistent / resisting";"53066";"1991_1";"Tajiks outside the Tajik SSR";"past: Stalinist era / 1930s-40s";"Factual Statement by Author";NA
+"tadzhiki Samarkanda (Uzbekistan)";"resistent / resisting";"53066";"1991_1";"Tajiks outside the Tajik SSR";"past: early Soviet";"Factual Statement by Author";NA
 "verkhovya Matchi";"traditional / narodnyj / nacional'nyj";"531251";"1953_3";"gornyj severnyj Tadzh./ mountainous regions Northern Tajikistan";"present";"Factual Statement by Author";NA
 "bassejn / dolina Zeravshan";"traditional / narodnyj / nacional'nyj";"531251";"1953_3";"Zeravshan";"present";"Factual Statement by Author";NA
 "downstream r. Zeravshan";"changing / in a process of change";"534173";"1953_3";"Zeravshan";"present";"Factual Statement by Author";NA
@@ -808,17 +808,17 @@
 "Samarkand";"urban";"54755";"1964_1";"Uzbekistan / Uzbekskaja SSR";"present";"Factual Statement by Author";"Continuity"
 "Samarkand";"progressive / peredovyj / novyj / efficient";"54755";"1964_1";"Uzbekistan / Uzbekskaja SSR";"present";"Factual Statement by Author";"Continuity"
 "Samarkand";"educated";"54755";"1964_1";"Uzbekistan / Uzbekskaja SSR";"present";"Factual Statement by Author";"Continuity"
-"tadzhiki Nuratinskogo khrebta";"urban";"54755";"1964_1";"gornye tadzhiki";"present";"Factual Statement by Author";"Continuity"
-"tadzhiki Nuratinskogo khrebta";"progressive / peredovyj / novyj / efficient";"54755";"1964_1";"gornye tadzhiki";"present";"Factual Statement by Author";"Continuity"
-"tadzhiki Nuratinskogo khrebta";"educated";"54755";"1964_1";"gornye tadzhiki";"present";"Factual Statement by Author";"Continuity"
+"tadzhiki Nuratinskogo khrebta";"urban";"54755";"1964_1";"groups in mountainous regions";"present";"Factual Statement by Author";"Continuity"
+"tadzhiki Nuratinskogo khrebta";"progressive / peredovyj / novyj / efficient";"54755";"1964_1";"groups in mountainous regions";"present";"Factual Statement by Author";"Continuity"
+"tadzhiki Nuratinskogo khrebta";"educated";"54755";"1964_1";"groups in mountainous regions";"present";"Factual Statement by Author";"Continuity"
 "Vostochnaja Bukhara / Bukharskoe khanstvo / Bukharskij emirat";"urban";"54755";"1964_1";"Historical locations";"present";"Factual Statement by Author";"Continuity"
 "Vostochnaja Bukhara / Bukharskoe khanstvo / Bukharskij emirat";"progressive / peredovyj / novyj / efficient";"54755";"1964_1";"Historical locations";"present";"Factual Statement by Author";"Continuity"
 "Vostochnaja Bukhara / Bukharskoe khanstvo / Bukharskij emirat";"educated";"54755";"1964_1";"Historical locations";"present";"Factual Statement by Author";"Continuity"
 "Isfara";"democratic";"54923";"1982_3";"Ferghana / Ferganskaja dolina";"past: pre-Soviet";"Factual Statement by Author";"Continuity"
 "Ura-Tjube";"democratic";"54923";"1982_3";"Ferghana / Ferganskaja dolina";"past: pre-Soviet";"Factual Statement by Author";"Continuity"
 "cities in pre-Soviet Tajikistan";"democratic";"54923";"1982_3";"Tajikistan / TadzhSSR";"past: pre-Soviet";"Factual Statement by Author";"Continuity"
-"tadzhiki verkhnej chasti doliny Shirabad-Dar'i";"traditional / narodnyj / nacional'nyj";"55004";"1965_2";"gornye tadzhiki";"past: early Soviet";"Factual Statement by Author";"Rupture"
-"tadzhiki verkhnej chasti doliny Shirabad-Dar'i";"primitive / primitivno";"55004";"1965_2";"gornye tadzhiki";"past: early Soviet";"Factual Statement by Author";"Rupture"
+"tadzhiki verkhnej chasti doliny Shirabad-Dar'i";"traditional / narodnyj / nacional'nyj";"55004";"1965_2";"groups in mountainous regions";"past: early Soviet";"Factual Statement by Author";"Rupture"
+"tadzhiki verkhnej chasti doliny Shirabad-Dar'i";"primitive / primitivno";"55004";"1965_2";"groups in mountainous regions";"past: early Soviet";"Factual Statement by Author";"Rupture"
 "ishkashimcy";"threatened / attacked / in need of protection";"55318";"1989_5";"Pamir groups";NA;"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "vakhancy";"threatened / attacked / in need of protection";"55318";"1989_5";"Pamir groups";NA;"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "shugnancy";"threatened / attacked / in need of protection";"55318";"1989_5";"Pamir groups";NA;"Citation Research, Secondary Literature, doklad, soobsshenie";NA
@@ -832,10 +832,10 @@
 "dolina Yazgulema / Yazgulem";"archaic / arkhaichno";"555325";"1953_3";"Gorno-Badakhshan / Sovetskij Badakhshan / GBAO";"present";"Factual Statement by Author";"Continuity"
 "Zakavkas";"archaic / arkhaichno";"555325";"1953_3";"Locations";"present";"Factual Statement by Author";"Continuity"
 "gornaja Gruzija";"archaic / arkhaichno";"555325";"1953_3";"Gruzija / Georgia";"present";"Factual Statement by Author";"Continuity"
-"Isfara";"progressive / peredovyj / novyj / efficient";"55722";"1982_3";"Ferghana / Ferganskaja dolina";"present";"Factual Statement by Author";NA
 "Isfara";"progressive / peredovyj / novyj / efficient";"55722";"1982_3";"Ferghana / Ferganskaja dolina";"past: early Soviet";"Factual Statement by Author";NA
-"Ura-Tjube";"progressive / peredovyj / novyj / efficient";"55722";"1982_3";"Ferghana / Ferganskaja dolina";"present";"Factual Statement by Author";NA
+"Isfara";"progressive / peredovyj / novyj / efficient";"55722";"1982_3";"Ferghana / Ferganskaja dolina";"present";"Factual Statement by Author";NA
 "Ura-Tjube";"progressive / peredovyj / novyj / efficient";"55722";"1982_3";"Ferghana / Ferganskaja dolina";"past: early Soviet";"Factual Statement by Author";NA
+"Ura-Tjube";"progressive / peredovyj / novyj / efficient";"55722";"1982_3";"Ferghana / Ferganskaja dolina";"present";"Factual Statement by Author";NA
 "sel'skoe naselenie juzhnykh i zapadnykh rajonov Tadzhikistana";"traditional / narodnyj / nacional'nyj";"56082";"1960_1";"sel'skoe naselenie Tadzh. / rural population of Tajikistan";NA;NA;NA
 "tjurki Uzbekistana";"traditional / narodnyj / nacional'nyj";"56082";"1960_1";"tjurki";NA;NA;NA
 "sel'skoe naselenie juzhnykh i zapadnikh rajonov Uzbekistana";"traditional / narodnyj / nacional'nyj";"56082";"1960_1";"uzbeki";NA;NA;NA
@@ -904,8 +904,8 @@
 "pamirskie tadzhiki Ishkashima";"traditional / narodnyj / nacional'nyj";"586888";"1978_1";"Pamir groups";"past";"Literature Review";"Continuity"
 "pamirskie tadzhiki Ishkashima";"primitive / primitivno";"586888";"1978_1";"Pamir groups";"past";"Literature Review";"Continuity"
 "pamirskie tadzhiki Ishkashima";"khorosho prisposobleno / well adapted";"586888";"1978_1";"Pamir groups";"past";"Literature Review";"Continuity"
-"tadzhiki verkhnej chasti doliny Shirabad-Dar'i";"modern / sovremennyj";"59495";"1965_2";"gornye tadzhiki";"present";"Factual Statement by Author";"Rupture"
-"tadzhiki verkhnej chasti doliny Shirabad-Dar'i";"developed / razvito";"59495";"1965_2";"gornye tadzhiki";"present";"Factual Statement by Author";"Rupture"
+"tadzhiki verkhnej chasti doliny Shirabad-Dar'i";"modern / sovremennyj";"59495";"1965_2";"groups in mountainous regions";"present";"Factual Statement by Author";"Rupture"
+"tadzhiki verkhnej chasti doliny Shirabad-Dar'i";"developed / razvito";"59495";"1965_2";"groups in mountainous regions";"present";"Factual Statement by Author";"Rupture"
 "tadzhiki";"religious";"61396";"1963_6";"Groups";"present";"Factual Statement by Author";NA
 "tadzhiki";"flawed / in need of improvement";"61396";"1963_6";"Groups";"present";"Factual Statement by Author";NA
 "Tajikistan / TadzhSSR";"traditional / narodnyj / nacional'nyj";"615620";"1967_5";"Locations";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
@@ -943,9 +943,9 @@
 "zhitel'nicy jugo-zapadnykh rajonov Uzbekistana";"modern / sovremennyj";"64207";"1979_3";"uzbeki";NA;"Factual Statement by Author";"Rupture"
 "zhitel'nicy jugo-zapadnykh rajonov Uzbekistana";"traditional / narodnyj / nacional'nyj";"64207";"1979_3";"uzbeki";NA;"Factual Statement by Author";"Rupture"
 "zhitel'nicy jugo-zapadnykh rajonov Uzbekistana";"mixed / coexisting";"64207";"1979_3";"uzbeki";NA;"Factual Statement by Author";"Rupture"
-"zhensshiny verkhov'ev Zeravshana / women of upper Zeravshan";"modern / sovremennyj";"64207";"1979_3";"gornye tadzhiki";NA;"Factual Statement by Author";"Rupture"
-"zhensshiny verkhov'ev Zeravshana / women of upper Zeravshan";"traditional / narodnyj / nacional'nyj";"64207";"1979_3";"gornye tadzhiki";NA;"Factual Statement by Author";"Rupture"
-"zhensshiny verkhov'ev Zeravshana / women of upper Zeravshan";"mixed / coexisting";"64207";"1979_3";"gornye tadzhiki";NA;"Factual Statement by Author";"Rupture"
+"zhensshiny verkhov'ev Zeravshana / women of upper Zeravshan";"modern / sovremennyj";"64207";"1979_3";"groups in mountainous regions";NA;"Factual Statement by Author";"Rupture"
+"zhensshiny verkhov'ev Zeravshana / women of upper Zeravshan";"traditional / narodnyj / nacional'nyj";"64207";"1979_3";"groups in mountainous regions";NA;"Factual Statement by Author";"Rupture"
+"zhensshiny verkhov'ev Zeravshana / women of upper Zeravshan";"mixed / coexisting";"64207";"1979_3";"groups in mountainous regions";NA;"Factual Statement by Author";"Rupture"
 "tadzhiki - zhiteli zemledel'cheskikh oazisov Srednej Azii";"unique / locally specific / svoeobraznyj / samobytnyj";"64614";"1961_4";"tadzhiki";NA;"Factual Statement by Author";NA
 "tadzhiki - zhiteli zemledel'cheskikh oazisov Srednej Azii";"traditional / narodnyj / nacional'nyj";"64614";"1961_4";"tadzhiki";NA;"Factual Statement by Author";NA
 "uzbeki";"unique / locally specific / svoeobraznyj / samobytnyj";"64614";"1961_4";"Central Asian titular nations";NA;"Factual Statement by Author";NA
@@ -956,8 +956,8 @@
 "turkmeny";"traditional / narodnyj / nacional'nyj";"64614";"1961_4";"Central Asian titular nations";NA;"Factual Statement by Author";NA
 "kirgizy";"unique / locally specific / svoeobraznyj / samobytnyj";"64892";"1961_4";"Central Asian titular nations";NA;"Factual Statement by Author";NA
 "gornye tadzhiki";"unique / locally specific / svoeobraznyj / samobytnyj";"64892";"1961_4";"groups in mountainous regions";NA;"Factual Statement by Author";NA
-"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"strong in conviction";"65495";"1990_1";"Tajiks outside Tajikistan";NA;"Factual Statement by Author";NA
-"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"peaceful";"65495";"1990_1";"Tajiks outside Tajikistan";NA;"Factual Statement by Author";NA
+"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"strong in conviction";"65495";"1990_1";"Tajiks outside the Tajik SSR";NA;"Factual Statement by Author";NA
+"tadzhiki v Uzbekistane / Tajiks in Uzbekistan";"peaceful";"65495";"1990_1";"Tajiks outside the Tajik SSR";NA;"Factual Statement by Author";NA
 "zhensshiny u ravninnykh tadzhikov / Tajik women in plainlands";"zamknutyj (pro obraz zhizni) / secluded (lifestyle)";"65735";"1975_6";"ravninnye tadzhiki";"past: pre-Soviet";"Factual Statement by Author";NA
 "zhensshiny u ravninnykh tadzhikov / Tajik women in plainlands";"unequal";"65735";"1975_6";"ravninnye tadzhiki";"past: pre-Soviet";"Factual Statement by Author";NA
 "zhensshiny u ravninnykh tadzhikov / Tajik women in plainlands";"suppressed / ugnetennyj / exploited / exploitative";"65735";"1975_6";"ravninnye tadzhiki";"past: pre-Soviet";"Factual Statement by Author";NA
@@ -1013,8 +1013,8 @@
 "turkmeny";"feudal";"700589";"1954_3";"Central Asian titular nations";"past";"Literature Review";NA
 "turkmeny";"feudal";"700589";"1954_3";"Central Asian titular nations";"past: pre-Soviet";"Literature Review";NA
 "uzbeki";"unequal";"70630";"1991_1";"Central Asian titular nations";"present";"Factual Statement by Author";NA
-"tadzhiki Bukhary (Uzbekistan)";"unequal";"70630";"1991_1";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
-"tadzhiki Samarkanda (Uzbekistan)";"unequal";"70630";"1991_1";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
+"tadzhiki Bukhary (Uzbekistan)";"unequal";"70630";"1991_1";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
+"tadzhiki Samarkanda (Uzbekistan)";"unequal";"70630";"1991_1";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
 "Tajikistan / TadzhSSR";"growing (population: mnogodetnost')";"71092";"1982_3";"Locations";"present";"Citation Research, Secondary Literature, doklad, soobsshenie";NA
 "Tajikistan / TadzhSSR";"growing (population: mnogodetnost')";"71092";"1982_3";"Locations";"present";"Factual Statement by Author";NA
 "Uzbek women / uzbechki";"active";"71126";"1975_6";"uzbeki";"past: early Soviet";"Factual Statement by Author";"Rupture"
@@ -1043,18 +1043,18 @@
 "gorodskoe naselenie Tadzh. / urban population of Tajikistan";"modern / sovremennyj";"74265";"1982_3";"Groups";"present";"Citation informant, local population, interviewee";NA
 "tadzhiki";"egalitarian / liberated";"74493";"1982_3";"Groups";NA;"Factual Statement by Author";NA
 "tadzhiki";"modern / sovremennyj";"74493";"1982_3";"Groups";NA;"Factual Statement by Author";NA
-"tadzhiki Samarkanda (Uzbekistan)";"impoverished (culturally / spiritually)";"74721";"1991_1";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
-"tadzhiki Samarkanda (Uzbekistan)";"suppressed / ugnetennyj / exploited / exploitative";"74721";"1991_1";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
-"tadzhiki Bukhary (Uzbekistan)";"impoverished (culturally / spiritually)";"74721";"1991_1";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
-"tadzhiki Bukhary (Uzbekistan)";"suppressed / ugnetennyj / exploited / exploitative";"74721";"1991_1";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
+"tadzhiki Samarkanda (Uzbekistan)";"impoverished (culturally / spiritually)";"74721";"1991_1";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
+"tadzhiki Samarkanda (Uzbekistan)";"suppressed / ugnetennyj / exploited / exploitative";"74721";"1991_1";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
+"tadzhiki Bukhary (Uzbekistan)";"impoverished (culturally / spiritually)";"74721";"1991_1";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
+"tadzhiki Bukhary (Uzbekistan)";"suppressed / ugnetennyj / exploited / exploitative";"74721";"1991_1";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
 "Uzbek women / uzbechki";"educated";"74911";"1986_1";"uzbeki";"past: early Soviet";"Factual Statement by Author";NA
 "Tajik women / tadzhichki";"educated";"74911";"1986_1";"tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki Samarkanda (Uzbekistan)";"democratic";"79201";"1991_1";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
-"tadzhiki Samarkanda (Uzbekistan)";"active";"79201";"1991_1";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
-"tadzhiki Samarkanda (Uzbekistan)";"peaceful";"79201";"1991_1";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
-"tadzhiki Bukhary (Uzbekistan)";"democratic";"79201";"1991_1";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
-"tadzhiki Bukhary (Uzbekistan)";"active";"79201";"1991_1";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
-"tadzhiki Bukhary (Uzbekistan)";"peaceful";"79201";"1991_1";"Tajiks outside Tajikistan";"present";"Factual Statement by Author";NA
+"tadzhiki Samarkanda (Uzbekistan)";"democratic";"79201";"1991_1";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
+"tadzhiki Samarkanda (Uzbekistan)";"active";"79201";"1991_1";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
+"tadzhiki Samarkanda (Uzbekistan)";"peaceful";"79201";"1991_1";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
+"tadzhiki Bukhary (Uzbekistan)";"democratic";"79201";"1991_1";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
+"tadzhiki Bukhary (Uzbekistan)";"active";"79201";"1991_1";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
+"tadzhiki Bukhary (Uzbekistan)";"peaceful";"79201";"1991_1";"Tajiks outside the Tajik SSR";"present";"Factual Statement by Author";NA
 "Kazakhstan / Kazakhskaja SSR";"educated";"7992";"1964-5";"Locations";"past: early Soviet";"Factual Statement by Author";"Continuity"
 "Kirgizija / Kirgizskaja SSR";"educated";"7992";"1964-5";"Locations";"past: early Soviet";"Factual Statement by Author";"Continuity"
 "Tajikistan / TadzhSSR";"educated";"7992";"1964-5";"Locations";"past: early Soviet";"Factual Statement by Author";"Continuity"
@@ -1074,14 +1074,14 @@
 "russkij narod / Russians";"mixed / coexisting";"81902";"1979_3";"Groups";"past: early Soviet";"Factual Statement by Author";NA
 "russkij narod / Russians";"diverse / mnogoobrazno";"81902";"1979_3";"Groups";"past: early Soviet";"Factual Statement by Author";NA
 "Turkestan / Turkestanskij kraj / general-gubernatorstvo";"changing / in a process of change";"8285";"1974_5";"Historical locations";"past: pre-Soviet";NA;NA
-"tadzhiki verkhov'ev Zeravshana";"traditional / narodnyj / nacional'nyj";"83524";"1979_3";"gornye tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki verkhov'ev Zeravshana";"mixed / coexisting";"83524";"1979_3";"gornye tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki verkhov'ev Zeravshana";"diverse / mnogoobrazno";"83524";"1979_3";"gornye tadzhiki";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"traditional / narodnyj / nacional'nyj";"83524";"1979_3";"groups in mountainous regions";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"mixed / coexisting";"83524";"1979_3";"groups in mountainous regions";"past: early Soviet";"Factual Statement by Author";NA
+"tadzhiki verkhov'ev Zeravshana";"diverse / mnogoobrazno";"83524";"1979_3";"groups in mountainous regions";"past: early Soviet";"Factual Statement by Author";NA
 "russkij narod / Russians";"traditional / narodnyj / nacional'nyj";"83524";"1979_3";"Groups";"past: early Soviet";"Factual Statement by Author";NA
 "russkij narod / Russians";"mixed / coexisting";"83524";"1979_3";"Groups";"past: early Soviet";"Factual Statement by Author";NA
 "russkij narod / Russians";"diverse / mnogoobrazno";"83524";"1979_3";"Groups";"past: early Soviet";"Factual Statement by Author";NA
-"tadzhiki Darvaza";"traditional / narodnyj / nacional'nyj";"85301";"1984_4";"gornye tadzhiki";"past";"Factual Statement by Author";"Continuity"
-"tadzhiki Darvaza";"traditional / narodnyj / nacional'nyj";"85301";"1984_4";"gornye tadzhiki";"present";"Factual Statement by Author";"Continuity"
+"tadzhiki Darvaza";"traditional / narodnyj / nacional'nyj";"85301";"1984_4";"groups in mountainous regions";"past";"Factual Statement by Author";"Continuity"
+"tadzhiki Darvaza";"traditional / narodnyj / nacional'nyj";"85301";"1984_4";"groups in mountainous regions";"present";"Factual Statement by Author";"Continuity"
 "pamirskie tadzhiki Ishkashima";"traditional / narodnyj / nacional'nyj";"85301";"1984_4";"Pamir groups";"past";"Factual Statement by Author";"Continuity"
 "pamirskie tadzhiki Ishkashima";"traditional / narodnyj / nacional'nyj";"85301";"1984_4";"Pamir groups";"present";"Factual Statement by Author";"Continuity"
 "pamirskie tadzhiki Rushana";"traditional / narodnyj / nacional'nyj";"85301";"1984_4";"Pamir groups";"past";"Factual Statement by Author";"Continuity"

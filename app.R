@@ -212,7 +212,7 @@ make_unipartite_weighted <- function(edgelist, input) { # input = category
   }else if(input == "Attributes"){
     weighted_edgelist <- edgelist %>% 
       group_by(source, target, group, attribute) %>% 
-      summarise(feature=Reduce(paste, as.character(feature)), issues = Reduce(paste, as.character(issue)), weight=sum(weight), timeframe=Reduce(paste, as.character(tempi)), past_present_relation=Reduce(paste, as.character(past_present_relation)), statement_types=Reduce(paste, as.character(type_of_statement))) 
+      summarise(issues = Reduce(paste, as.character(issue)), weight=sum(weight), timeframe=Reduce(paste, as.character(tempi)), past_present_relation=Reduce(paste, as.character(past_present_relation)), statement_types=Reduce(paste, as.character(type_of_statement))) # feature=Reduce(paste, as.character(feature)), 
   } else if(input == "Narratives"){
     weighted_edgelist <- edgelist %>% 
       group_by(source, target, group, narrative) %>% 
