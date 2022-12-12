@@ -433,20 +433,21 @@ server <- function(input, output, session) {
                                          "undemocratic / hierarchical / despotic", "democratic", "collectivist",
                                          "atheist / non-spiritual / materialist",
                                          "educated", "obespechenno", "urban", "kul'turno",
+                                         "flawed / in need of improvement", 
                                          "Muslim", "Zoroastrian", "religious", "superstitious",
                                          "feudal","patriarchal", "matriarchal",
-                                         "loyal / trustworthy", "disloyal / suspect", "peaceful", "belligerent"),)
+                                         "loyal / trustworthy", "disloyal / suspect"),)
       updateCheckboxGroupInput(session, "category_3",
                                selected=character(0),
                                choices=c("otstalyj", "archaic / arkhaichno", "primitive / primitivno",
                                          "inhospitable / adverse conditions", "hospitable", "isolated / otdalennyj / trudnodostupnyj", "zamknutyj",
-                                         "active", "passive", "evropeidno", "chisto",
-                                         "flawed / in need of improvement", 
+                                         "active", "passive", "evropeoidno", '"chisto" / pure / clean',
                                          "avtokhtonno", "unique / locally specific / svoeobraznyj", "diverse / mnogoobrazno",
                                          "traditional / narodnyj / nacional'nyj", "mixed / coexisting",
                                          "vanishing / being replaced or erased", "threatened / attacked / in need of protection",
                                          "changing / in a process of change",
-                                         "growing", "ustoichivo / stable"),)
+                                         "growing", "ustoichivo / stable", 
+                                         "peaceful", "belligerent"),)
     } else if (input$category == "Events, Periods in Soviet History") {
       updateCheckboxGroupInput(session, "category_2",
                                selected=character(0),
@@ -479,7 +480,7 @@ server <- function(input, output, session) {
                                            "Sovietization", 
                                            "sblizhenie",
                                            "control over nature",
-                                           "closing gap between city and countryside", 
+                                           "closing gap between city and countryside",
                                            "socialist internationalism"),)
       updateCheckboxGroupInput(session, "category_3",
                                selected=character(0),
