@@ -311,7 +311,7 @@ ui <- fluidPage(
             label=NULL,
             choices = c("tadzhiki", #Tajiks
                         "uzbeki", 
-                        "Pamir groups", 
+                        "Pamiri groups", 
                         "kazakhi",
                         "kirgizy",
                         "turkmeny",
