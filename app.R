@@ -321,6 +321,7 @@ ui <- fluidPage(
                         "Tajikistan",
                         "Uzbekistan",
                         "Yaghnob", 
+                        "Pamir",
                         "Northern Tajikistan", 
                         "Southern Tajikistan", 
                         "Tajiks outside the Tajik SSR",
@@ -341,6 +342,7 @@ ui <- fluidPage(
                         "Ferghana",
                         "Soviet Union", 
                         "russkij narod / Russians",
+                        "Russia",
                         "tjurki",
                         "Afghanistan", 
                         "Iran",
@@ -721,7 +723,7 @@ server <- function(input, output, session) {
                    FigureLabel = 'Co-Occurrences',
                    BoxLabPos = c(100, 100),
                    IncludePerc = TRUE,
-                   PercentageDecimals =0,
+                   PercentageDecimals =1,
                    PercPos = NULL,
                    CSS_Output_Supress = FALSE,
                    PRINT=FALSE
@@ -743,3 +745,14 @@ server <- function(input, output, session) {
 
 shinyApp(ui = ui, server = server)
 
+
+
+
+#input_groups <- "women"
+#edgelist <- read.csv2("/Users/gast/Desktop/THESIS/Repos/ma-thesis-shiny/input/ag_ag_fts_edgelist.csv", header=T, row.names=NULL)
+#source_matches <- grep(input_groups, edgelist$source)
+#target_matches <- grep(input_groups, edgelist$target)# return row indices
+#matches <- intersect(source_matches, target_matches)
+#print(matches)
+#View(edgelist)
+#edgelist <- edgelist[matches, ]

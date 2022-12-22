@@ -48,21 +48,21 @@ g1.call(bp1);g1.append("text")
  g1.selectAll(".mainBars").append("text").attr("class","perc")
                         .attr("x",d=>(d.part=="primary"? -505:520))
                         .attr("y",d=>+6)
-                        .text(function(d){ return d3.format("0.0%")(d.percent)})
+                        .text(function(d){ return d3.format("0.1%")(d.percent)})
                         .attr("text-anchor",d=>(d.part=="primary"? "end": "start")); 
 
 function mouseover(d){
 bp1.mouseover(d);
                             g1.selectAll(".mainBars")
                             .select(".perc")
-                            .text(function(d){ return d3.format("0.0%")(d.percent)});
+                            .text(function(d){ return d3.format("0.1%")(d.percent)});
 }
 
                      function mouseout(d){
 bp1.mouseout(d);
                             g1.selectAll(".mainBars")
                             .select(".perc")
-                            .text(function(d){ return d3.format("0.0%")(d.percent)});
+                            .text(function(d){ return d3.format("0.1%")(d.percent)});
 }
 
 
