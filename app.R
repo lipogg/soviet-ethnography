@@ -80,24 +80,40 @@ filter_groups_bipartite <- function(edgelist, input_groups) {
 }
 
 
-# Helper function for filter_groups_unipartite(). Takes the length of the current 
-# input_groups vector as input (i.e. length(c(input$groups_2, input$groups_3)))
-# and returns a vector of indices. This vector may be used to drop rows from a 
-# dataframe created by expand.grid() function. expand.grid() calculates the Cartesian 
-# product of the elements of two lists and returns a dataframe in which rows represent
-# all combinations of elements from the two lists, which includes elements with the 
-# same index position, i.e vector_1[[1]] and vector_2[[1]]. In the filter_groups_unipartite()
-# function, vector_1 and vector_2 are vectors of indices of rows in the input edgelist 
-# which matched matched the search group input. vector_1[[1]] and vector_2[[1]] thus contain
-# indices of rows from the input edgelist that matched with the same element in the 
-# input_groups vector. However, when more than one group is selected, the edgelist 
-# is filtered for rows where different elements in the input_groups vector were matched.
-helper <- function(n) {
-  vec <- c()
-  for(i in 1:n){
-    vec <- c(vec, n*(n-(n-(i-1)))+i)
+# Helper function for filter_groups_unipartite(): Searches for matches in different columns. 
+# option 1: source-target; option 2: first element of group column, second element of group column
+# option 3: first element of group column, target; option 4: second element of group column, source
+# Distinguishing between columns is necessary so that matches are not returned, where 
+# two input groups are matched for the same category: f.e. co-occurrences between women of Upper Zeravshan
+# any any other group or location would be matched if input groups were "women" and "mountainous regions"
+return_indices <- function(input_group, edgelist, options){
+  temp <- str_split_fixed(edgelist$group, ", ", 2)
+  if(options==1){ # option 1: source and target
+    matches_a <- grep(input_group, edgelist$source)
+    matches_b <- grep(input_group, edgelist$target) 
+  } else if(options==2){ # option 2: first element of group column, second element of group column
+    matches_a <- grep(input_group, temp[,1]) 
+    matches_b <- grep(input_group, temp[,2])
+  } else if(options==3){ # option 3: first element of group column, target
+    matches_a <- grep(input_group, temp[,1])
+    matches_b <- grep(input_group, edgelist$target)
+  } else { # option 4: second element of group column, source
+    matches_a <- grep(input_group, temp[,2])
+    matches_b <- grep(input_group, edgelist$source)
   }
-  return(vec)
+  matches <- c(matches_a, matches_b) 
+  return(matches)
+}
+
+# Helper function for filter_groups_unipartite: returns intersect values between 
+# elements of a list of list: f.e. all matches for source and target column for 
+# input category 1 are matched with all matches for source and target column for
+# input category 2. 
+get_intersect <- function(input_list){
+  combos <- Reduce(c,lapply(2:length(input_list), 
+                            function(x) combn(1:length(input_list),x,simplify=FALSE) ))
+  matches <-  lapply(combos, function(x) Reduce(intersect,input_list[x]) )
+  return(matches)
 }
 
 # Return all rows where either source or group 1 in group column and either target or 
@@ -109,57 +125,35 @@ helper <- function(n) {
 filter_groups_unipartite <- function(edgelist, input_groups) {
   # temporarily split up "group" column into two: "group" column contains two groups, 
   # the first corresponds to the source column, the second to the target column. 
-  temp <- str_split_fixed(edgelist$group, ",", 2)
   if(length(input_groups) == 1) { # only one category selected
+    temp <- str_split_fixed(edgelist$group, ", ", 2)
     group_matches_1 <- grep(input_groups, temp[,1]) # return row indices
     group_matches_2 <- grep(input_groups, temp[,2]) # return row indices
     source_matches <- grep(input_groups, edgelist$source)# return row indices
     target_matches <- grep(input_groups, edgelist$target)# return row indices
-    if(!is.null(group_matches_1) && !is.null(group_matches_2)) { 
-      matches <- intersect(group_matches_1, group_matches_2)
-    } else if(!is.null(group_matches_1) && !is.null(target_matches)) {
-      matches <- intersect(group_matches_1, target_matches)
-    } else if(!is.null(group_matches_2) && !is.null(source_matches)) {
-      matches <- intersect(group_matches_2, source_matches)
-    } else if(!is.null(source_matches) && !is.null(target_matches)) {
-      matches <- intersect(source_matches, target_matches)
+    m_1 <- intersect(group_matches_1, group_matches_2)
+    m_2 <- intersect(group_matches_1, target_matches)
+    m_3 <- intersect(group_matches_2, source_matches)
+    m_4 <- intersect(source_matches, target_matches)
+    matches <- c(m_1, m_2, m_3, m_4)
+    if(!is.null(matches)){ 
+      edgelist <- edgelist[matches, ]
+      return(edgelist)
     } else {
       return(edgelist)
     }
-    edgelist <- edgelist[matches, ]
-    return(edgelist)
   } else if(length(input_groups) > 1) { # more than one category selected
-    # get list of list of all row indices that matched each of the input groups. 
-    # i.e. for input_groups <- c("tadzhiki", "uzbeki"), group_matches is a list 
-    # of two lists: The first list contains indices of rows from the input edgelist, 
-    # where "tadzhiki" returned a match for the first element in the "group" column. 
-    group_matches_1 <- map(input_groups, grep, temp[,1])  # return row indices
-    group_matches_2 <- map(input_groups, grep, temp[,2])
-    source_matches <- map(input_groups, grep, edgelist$source)  # return row indices
-    target_matches <- map(input_groups, grep, edgelist$target)
-    # call helper function to remove all combinations between matches for the 
-    # same input group (see helper function specification)
-    indices <- helper(length(input_groups))
-    # get df of row indices of all combinations between group_matches_1 and group_matches_2
-    group_group_combinations <- expand.grid(group_matches_1, group_matches_2) 
-    group_group_combinations <- group_group_combinations[-indices, ]
-    # get df of row indices of all combinations between group_matches_1 and target_matches 
-    group_target_combinations <- expand.grid(group_matches_1, target_matches) 
-    group_target_combinations <- group_target_combinations[-indices, ]
-    # get df of row indices of all combinations between group_matches_2 and source_matches 
-    source_group_combinations <- expand.grid(group_matches_1, target_matches) 
-    source_group_combinations <- source_group_combinations[-indices, ]
-    # get df of row indices of all combinations between source_matches and target_matches
-    source_target_combinations <- expand.grid(source_matches, target_matches) 
-    source_target_combinations <- source_target_combinations[-indices, ]
-    # apply intersect() rowwise to both columns in the dataframe of combinations, return unique matches
-    matches <- unlist(map2(group_group_combinations$Var1, group_group_combinations$Var2, intersect))
-    matches <- c(matches, unlist(map2(group_target_combinations$Var1, group_target_combinations$Var2, intersect)))
-    matches <- c(matches, unlist(map2(source_group_combinations$Var1, source_group_combinations$Var2, intersect)))
-    matches <- c(matches, unlist(map2(source_target_combinations$Var1, source_target_combinations$Var2, intersect)))
-    matches <- unique(matches)
+    # Call helper functions to make sure a row is only matched if input groups are 
+    # either both in source and target, in target and first element of group column,
+    # in source column and first element of group column, or both group column elements,
+    # but not first element of group column and source, or second element and target. 
+    input_list_1 <- map(input_groups, return_indices, edgelist, 1)
+    input_list_2 <- map(input_groups, return_indices, edgelist, 2)
+    input_list_3 <- map(input_groups, return_indices, edgelist, 3)
+    input_list_4 <- map(input_groups, return_indices, edgelist, 4)
+    matches <- c(get_intersect(input_list_1), get_intersect(input_list_2), get_intersect(input_list_3),  get_intersect(input_list_4))
     if(!is.null(matches)) {
-      edgelist <- edgelist[matches, ]
+      edgelist <- unique(edgelist[unlist(matches),])
       return(edgelist)
     } else {
       return(edgelist)
@@ -276,10 +270,11 @@ ui <- fluidPage(
             label=NULL,
             choices = c("modernization", 
                         "Sovietization", 
-                        "sblizhenie", 
+                        "slijanie / sblizhenie", 
+                        "pre-Soviet sblizhenie",
+                        "assimilation",
                         "control over nature",
-                        "closing gap between city and countryside", 
-                        "socialist internationalism")
+                        "closing gap between city and countryside")
           )
         ),
         
@@ -292,7 +287,7 @@ ui <- fluidPage(
                         "battle against perezhitki / survivals", 
                         "liberation of women",
                         "development of national in form, socialist in content culture",
-                        "assimilation")
+                        "socialist internationalism")
           )
         )
       ),
@@ -480,17 +475,18 @@ server <- function(input, output, session) {
                                selected=character(0),
                                choices = c("modernization", 
                                            "Sovietization", 
-                                           "sblizhenie",
+                                           "slijanie / sblizhenie", 
+                                           "pre-Soviet sblizhenie",
+                                           "assimilation",
                                            "control over nature",
-                                           "closing gap between city and countryside",
-                                           "socialist internationalism"),)
+                                           "closing gap between city and countryside"),)
       updateCheckboxGroupInput(session, "category_3",
                                selected=character(0),
                                choices = c("battle against religion", 
                                            "battle against perezhitki / survivals", 
                                            "liberation of women",
                                            "development of national in form, socialist in content culture",
-                                           "assimilation"),)
+                                           "socialist internationalism"),)
     }
 
   })
@@ -746,13 +742,3 @@ server <- function(input, output, session) {
 shinyApp(ui = ui, server = server)
 
 
-
-
-#input_groups <- "women"
-#edgelist <- read.csv2("/Users/gast/Desktop/THESIS/Repos/ma-thesis-shiny/input/ag_ag_fts_edgelist.csv", header=T, row.names=NULL)
-#source_matches <- grep(input_groups, edgelist$source)
-#target_matches <- grep(input_groups, edgelist$target)# return row indices
-#matches <- intersect(source_matches, target_matches)
-#print(matches)
-#View(edgelist)
-#edgelist <- edgelist[matches, ]
