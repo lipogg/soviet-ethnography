@@ -415,9 +415,9 @@ server <- function(input, output, session) {
       updateCheckboxGroupInput(session, "category_3",
                              selected=character(0),
                              choices=c("perezhitki", "religion", "beliefs / myths",
-                                       '"racial type" / rasovyj tip / rasa', #"physical features,  anthropometry,  anthroposcopy"
+                                       '"racial type" / rasovyj tip / rasa', 
                                        "ethnogenesis", "etnos / ethnos", 
-                                       #"genetic features", "anthroposcopic measures", "craniological features", "physical features",
+                                       #"genetic features", "anthroposcopic measures", "anthropometric measures", "craniological features", "physical features",
                                       "gender relations / polozhenie zhensshiny",
                                       "family structure", "social formation", "mode of production",
                                       "obraz zhizni", "kolkhozes", "agriculture",

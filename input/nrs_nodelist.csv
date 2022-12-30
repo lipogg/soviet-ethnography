@@ -1,26 +1,26 @@
-"id";"label";"group"
-"606ABAF2-82E8-4C1B-8A41-5F6C61C327C2";"dobrovol'naja assimilacija / voluntary assimilation";"Narratives [N]"
-"C432E1B3-9ECA-4AE6-87DF-E4B8335D341F";"criticism of the unjust treatment of national / ethnic groups";"Narratives [N]"
-"62335664-F6E3-41E0-9E4E-961BF1DD8D04";"estestvennaja assimilacija / natural assimilation";"Narratives [N]"
-"A7CC7A71-DE2C-4F59-A763-3F68BCFE0542";"forced assimilation / tjurkizacija";"Narratives [N]"
-"08A32E43-6BA6-49A2-A98D-A7082F984B1F";"forced assimilation / uzbekizacija";"Narratives [N]"
-"091A8C6E-1426-465E-B90A-1D446B5C9255";"failed solution of the nationalities problem";"Narratives [N]"
-"D3EDF67F-4D85-46F7-80CA-2C814CBF4FA9";"forced assimilation / otadzhikovanie";"Narratives [N]"
-"78D0753E-AD87-480D-9362-DB1FA61C81D3";"lost battle against religion";"Narratives [N]"
-"E2C70E94-0481-40B6-831D-CB29D22B3D29";"failed raskreposshenie zhensshin / failed liberation of women";"Narratives [N]"
-"E22D2DF3-9241-4567-AEA0-A09882BE25F7";"lost battle against perezhitki / survivals";"Narratives [N]"
-"D65800CE-12F8-4C0F-A594-3DA49EA79516";"failed modernization";"Narratives [N]"
-"6D77D753-3725-4868-BCC3-DA05224D8BD3";"vyravnivanie korenykh nacional'nostej sojuznykh respublik";"Narratives [N]"
-"2D822D2F-E5AC-4963-9376-EBF80F9A82E9";"raskreposshenie zhensshin / liberation of women";"Narratives [N]"
-"BB0EE31F-CDFC-4103-B346-BC5E02B2AC83";"battle against religion";"Narratives [N]"
-"0AD32CD2-6912-4E87-B9E3-1BE62B24C2AD";"battle against perezhitki / survivals";"Narratives [N]"
-"7938F40F-C446-4551-A410-5C00D8EB59E4";"control over nature / making land arable / osvoenie zemel'";"Narratives [N]"
-"2F32DC81-D514-440D-B78E-6D1B5FD25EB6";"closing gap between city and countryside / village";"Narratives [N]"
-"E497FAA7-64CE-4401-A851-3FEF46C62BA2";"socialist internationalism / druzhba narodov";"Narratives [N]"
-"00600329-8BDC-4513-8820-03FCDD014FCD";"modernization / socialist progress";"Narratives [N]"
-"55828560-D644-44EA-BEDF-DDCE9FE188A0";"slijanie / sblizhenie / fusion / convergence";"Narratives [N]"
-"2A5FA8CC-BF23-4AED-A024-AA50FD1DAE1A";"pre-Soviet sblizhenie during Russian colonial rule";"Narratives [N]"
-"BC592873-D8DF-4115-B5DB-8766AAAE5E0A";"pre-Soviet modernization during Russian colonial rule";"Narratives [N]"
-"F4B2D048-222E-4AC4-BF20-BA6B7605D8EC";"change in pre-socialist socio-economic formations";"Narratives [N]"
-"30E0192D-E627-40C6-9524-3AC84223C608";"development of national in form, socialist in content culture";"Narratives [N]"
-"43A59A7B-A9A7-4B65-935A-67F48F3C85AF";"Sovietization";"Narratives [N]"
+id;label;group
+606ABAF2-82E8-4C1B-8A41-5F6C61C327C2;dobrovol'naja assimilacija / voluntary assimilation;Narratives [N]
+C432E1B3-9ECA-4AE6-87DF-E4B8335D341F;criticism of the unjust treatment of national / ethnic groups;Narratives [N]
+62335664-F6E3-41E0-9E4E-961BF1DD8D04;estestvennaja assimilacija / natural assimilation;Narratives [N]
+A7CC7A71-DE2C-4F59-A763-3F68BCFE0542;forced assimilation / tjurkizacija;Narratives [N]
+08A32E43-6BA6-49A2-A98D-A7082F984B1F;forced assimilation / uzbekizacija;Narratives [N]
+091A8C6E-1426-465E-B90A-1D446B5C9255;failed solution of the nationalities problem;Narratives [N]
+D3EDF67F-4D85-46F7-80CA-2C814CBF4FA9;forced assimilation / otadzhichivanie;Narratives [N]
+78D0753E-AD87-480D-9362-DB1FA61C81D3;lost battle against religion;Narratives [N]
+E2C70E94-0481-40B6-831D-CB29D22B3D29;failed raskreposshenie zhensshin / failed liberation of women;Narratives [N]
+E22D2DF3-9241-4567-AEA0-A09882BE25F7;lost battle against perezhitki / survivals;Narratives [N]
+D65800CE-12F8-4C0F-A594-3DA49EA79516;failed modernization;Narratives [N]
+6D77D753-3725-4868-BCC3-DA05224D8BD3;vyravnivanie korenykh nacional'nostej sojuznykh respublik;Narratives [N]
+2D822D2F-E5AC-4963-9376-EBF80F9A82E9;raskreposshenie zhensshin / liberation of women;Narratives [N]
+BB0EE31F-CDFC-4103-B346-BC5E02B2AC83;battle against religion;Narratives [N]
+0AD32CD2-6912-4E87-B9E3-1BE62B24C2AD;battle against perezhitki / survivals;Narratives [N]
+7938F40F-C446-4551-A410-5C00D8EB59E4;control over nature / making land arable / osvoenie zemel';Narratives [N]
+2F32DC81-D514-440D-B78E-6D1B5FD25EB6;closing gap between city and countryside / village;Narratives [N]
+E497FAA7-64CE-4401-A851-3FEF46C62BA2;socialist internationalism / druzhba narodov;Narratives [N]
+00600329-8BDC-4513-8820-03FCDD014FCD;modernization / socialist progress;Narratives [N]
+55828560-D644-44EA-BEDF-DDCE9FE188A0;slijanie / sblizhenie / fusion / convergence;Narratives [N]
+2A5FA8CC-BF23-4AED-A024-AA50FD1DAE1A;pre-Soviet sblizhenie during Russian colonial rule;Narratives [N]
+BC592873-D8DF-4115-B5DB-8766AAAE5E0A;pre-Soviet modernization during Russian colonial rule;Narratives [N]
+F4B2D048-222E-4AC4-BF20-BA6B7605D8EC;change in pre-socialist socio-economic formations;Narratives [N]
+30E0192D-E627-40C6-9524-3AC84223C608;development of national in form, socialist in content culture;Narratives [N]
+43A59A7B-A9A7-4B65-935A-67F48F3C85AF;Sovietization;Narratives [N]
